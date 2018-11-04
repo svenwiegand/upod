@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:upod="http://schemas.android.com/apk/res/mobi.upod.app">
+
+    <CheckBoxPreference
+        android:key="pref_sync_notification"
+        android:title="@string/pref_sync_notification"
+        android:summary="@string/pref_sync_notification_summary"
+        android:defaultValue="true"/>
+
+    <PreferenceCategory android:title="@string/pref_category_sync_automatic">
+        <Preference
+            android:key="pref_sync_time_info"
+            android:title="@string/pref_sync_time_info"/>
+
+        <mobi.upod.android.preference.ListPreferenceWithEntrySummary
+            android:key="pref_sync_frequency"
+            android:title="@string/pref_sync_frequency"
+            android:entryValues="@array/pref_sync_frequency_values"
+            android:entries="@array/pref_sync_frequency_entries"
+            upod:summaries="@array/pref_sync_frequency_summaries"
+            android:defaultValue="120"/>
+
+        <CheckBoxPreference
+            android:key="pref_sync_time_1_enabled"
+            android:title="@string/pref_sync_time_1"
+            android:summary="@string/pref_sync_time_summary"/>
+        <mobi.upod.android.preference.TimePickerPreference
+            android:key="pref_sync_time_1"
+            android:dependency="pref_sync_time_1_enabled"
+            android:icon="@drawable/ic_pref_indent"
+            android:defaultValue="08:00"/>
+
+        <CheckBoxPreference
+            android:key="pref_sync_time_2_enabled"
+            android:title="@string/pref_sync_time_2"
+            android:summary="@string/pref_sync_time_summary"/>
+        <mobi.upod.android.preference.TimePickerPreference
+            android:key="pref_sync_time_2"
+            android:dependency="pref_sync_time_2_enabled"
+            android:icon="@drawable/ic_pref_indent"
+            android:defaultValue="20:00"/>
+
+        <CheckBoxPreference
+            android:key="pref_sync_only_on_wifi"
+            android:title="@string/pref_sync_only_on_wifi"
+            android:summary="@string/pref_sync_only_on_wifi_summary"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_sync_cloud">
+        <CheckBoxPreference
+            android:key="pref_sync_cloud"
+            android:title="@string/pref_sync_cloud"
+            android:summary="@string/pref_sync_cloud_summary"
+            android:defaultValue="false"/>
+        <Preference
+            android:key="pref_fix_gdrive_app_folder"
+            android:dependency="pref_sync_cloud"
+            android:title="@string/pref_fix_gdrive_app_folder"
+            android:summary="@string/pref_fix_gdrive_app_folder_summary"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_category_info">
+        <Preference
+            android:key="pref_about"
+            android:title="@string/pref_about"
+            android:summary="@string/pref_about_summary"/>
+        <Preference
+            android:key="pref_website"
+            android:title="@string/pref_website"
+            android:summary="@string/pref_website_summary"/>
+        <Preference
+            android:key="pref_gplus"
+            android:title="@string/pref_gplus"
+            android:summary="@string/pref_gplus_summary"/>
+        <Preference
+            android:key="pref_twitter"
+            android:title="@string/pref_twitter"
+            android:summary="@string/pref_twitter_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_contribute">
+        <Preference
+            android:key="pref_purchase"
+            android:title="@string/pref_purchase"
+            android:summary="@string/pref_purchase_summary"/>
+        <Preference
+            android:key="pref_rate"
+            android:title="@string/pref_rate"
+            android:summary="@string/pref_rate_summary"/>
+        <Preference
+            android:key="pref_share_upod"
+            android:title="@string/pref_share_upod"
+            android:summary="@string/pref_share_upod_summary"/>
+        <Preference
+            android:key="pref_beta"
+            android:title="@string/pref_beta"
+            android:summary="@string/pref_beta_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_support">
+        <Preference
+            android:key="pref_reset_tips"
+            android:title="@string/pref_reset_tips"
+            android:summary="@string/pref_reset_tips_summary"/>
+        <Preference
+            android:key="pref_support_site"
+            android:title="@string/pref_support_site"
+            android:summary="@string/pref_support_site_summary"/>
+        <CheckBoxPreference
+            android:key="pref_enhanced_logging"
+            android:title="@string/pref_enhanced_logging"
+            android:summary="@string/pref_enhanced_logging_summary"
+            android:defaultValue="false"/>
+        <Preference
+            android:key="pref_send_diagnostics"
+            android:title="@string/pref_send_diagnostics"
+            android:summary="@string/pref_send_diagnostics_summary"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

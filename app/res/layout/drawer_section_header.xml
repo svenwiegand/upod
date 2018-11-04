@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/touchable"
+        android:textAppearance="@style/TextAppearance.List.Subhead"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="@dimen/keyline_1"
+        android:paddingRight="@dimen/keyline_1"
+        android:text="Library"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider"
+        android:layout_gravity="top"
+        android:background="?android:attr/listDivider"/>
+</FrameLayout>

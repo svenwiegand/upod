@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/discover_item_height"
+    android:background="@drawable/podcast_grid_discover_item_background">
+
+    <ImageView
+        android:id="@+id/podcastImage"
+        android:layout_width="@dimen/discover_coverart_size"
+        android:layout_height="@dimen/discover_coverart_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/space_small" />
+
+    <TextView
+        android:id="@+id/episodeCounter"
+        android:layout_alignTop="@id/podcastImage"
+        android:layout_alignRight="@id/podcastImage"
+        style="@style/Counter"/>
+
+    <ImageView
+        android:id="@+id/subscriptionIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/podcastImage"
+        android:layout_alignBottom="@id/podcastImage"
+        android:src="@drawable/ic_podcast_indicator_subscribed" />
+
+    <TextView
+        android:id="@+id/podcastTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/podcastImage"
+        android:layout_marginLeft="@dimen/discover_item_padding"
+        android:layout_marginTop="@dimen/discover_item_padding"
+        android:layout_marginRight="@dimen/discover_item_padding"
+        android:layout_alignTop="@id/podcastImage"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textAppearance="@style/TextAppearance.List"/>
+
+    <TextView
+        android:id="@+id/podcastCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/podcastTitle"
+        android:layout_alignRight="@id/podcastTitle"
+        android:layout_below="@id/podcastTitle"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textAppearance="@style/TextAppearance.List.SecondaryText"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?activatedListItemBackground" />
+</RelativeLayout>

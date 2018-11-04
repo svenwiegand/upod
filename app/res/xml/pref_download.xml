@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:upod="http://schemas.android.com/apk/res/mobi.upod.app">
+
+    <mobi.upod.android.preference.ListPreferenceWithEntrySummary
+        android:key="pref_download_auto_add"
+        android:title="@string/pref_auto_add_download_strategy"
+        android:entryValues="@array/pref_auto_add_download_strategy_values"
+        android:entries="@array/pref_auto_add_download_strategy_entries"
+        upod:summaries="@array/pref_auto_add_download_strategy_summaries"
+        android:defaultValue="Playlist"/>
+    <mobi.upod.android.preference.ListPreferenceWithEntrySummary
+        android:key="pref_download_auto_start"
+        android:title="@string/pref_auto_start_download_strategy"
+        android:entryValues="@array/pref_auto_start_download_strategy_values"
+        android:entries="@array/pref_auto_start_download_strategy_entries"
+        upod:summaries="@array/pref_auto_start_download_strategy_summaries"
+        android:defaultValue="NonMeteredConnection"/>
+</PreferenceScreen>

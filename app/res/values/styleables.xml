@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ActionButton">
+        <attr name="invisibleWhenGone" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ActionPanel">
+        <attr name="primaryActionButton" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_colorRipple" format="color" />
+        <attr name="fab_shadow" format="boolean" />
+        <attr name="fab_type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ListPreferenceWithEntrySummary">
+        <attr name="summaries" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaxSquareFrameByWidthLayout">
+        <attr name="maxSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="NumberPickerPreference">
+        <attr name="android:max"/>
+        <attr name="min" format="integer"/>
+        <attr name="stepSize" format="integer"/>
+        <attr name="numberFormat" format="string"/>
+        <attr name="numberUnit" format="string|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SeekBarPreference">
+        <attr name="floatMax" format="float"/>
+        <attr name="floatMin" format="float"/>
+        <attr name="floatValue" format="float"/>
+        <attr name="floatStepSize" format="float"/>
+        <attr name="floatFormat" format="string"/>
+    </declare-styleable>
+
+    <attr name="fixed_dimension">
+        <enum name="width" value="1"/>
+        <enum name="height" value="2"/>
+    </attr>
+
+    <declare-styleable name="TintableImageView">
+        <attr name="tint" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="VideoContainerLayout">
+        <attr name="fixed_dimension"/>
+    </declare-styleable>
+</resources>

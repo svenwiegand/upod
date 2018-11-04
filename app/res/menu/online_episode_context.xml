@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_mark_unfinished"
+          android:icon="@drawable/ic_action_reload_light"
+          android:title="@string/action_mark_unfinished"/>
+
+    <item android:id="@+id/action_pause"
+          android:icon="@drawable/ic_action_pause"
+          android:title="@string/action_pause"/>
+    <item android:id="@+id/action_cast"
+          android:icon="@drawable/ic_action_cast_light"
+          android:title="@string/action_cast"/>
+
+    <item android:id="@+id/action_add_to_library"
+          android:icon="@drawable/ic_action_library_light"
+          android:title="@string/action_add_to_library"/>
+
+    <item android:id="@+id/action_download_error"
+          android:icon="@drawable/ic_action_download_error"
+          android:title="@string/action_download_error"/>
+    <item android:id="@+id/action_download"
+          android:icon="@drawable/ic_action_download_light"
+          android:title="@string/action_download"/>
+    <item android:id="@+id/action_stop_download"
+          android:icon="@drawable/ic_action_download_stop_light"
+          android:title="@string/action_stop_download"/>
+    <item android:id="@+id/action_add_download"
+          android:icon="@drawable/ic_action_download_add_light"
+          android:title="@string/action_add_download"/>
+
+    <item android:id="@+id/action_stream"
+          android:icon="@drawable/ic_action_stream_light"
+          android:title="@string/action_stream"/>
+    <item android:id="@+id/action_play"
+          android:icon="@drawable/ic_action_play_light"
+          android:title="@string/action_play"/>
+    <item android:id="@+id/action_play_next"
+          android:title="@string/action_play_next"/>
+    <item android:id="@+id/action_add_to_playlist"
+          android:icon="@drawable/ic_action_playlist_add_light"
+          android:title="@string/action_add_to_playlist"/>
+
+    <item android:id="@+id/action_star"
+          android:title="@string/action_star"/>
+    <item android:id="@+id/action_unstar"
+          android:title="@string/action_unstar"/>
+    <item android:id="@+id/action_mark_finished"
+          android:title="@string/action_mark_finished"/>
+    <item android:id="@+id/action_mark_finished_from_here"
+          android:title="@string/action_mark_finished_from_here"/>
+    <item android:id="@+id/action_mark_finished_to_here"
+          android:title="@string/action_mark_finished_to_here"/>
+
+    <item android:id="@+id/action_delete_download"
+          android:title="@string/action_delete_download"/>
+</menu>

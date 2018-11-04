@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        class="mobi.upod.app.gui.episode.EpisodeDetailsFragment"
+        android:id="@+id/episode_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/playbackPanel"/>
+
+    <include
+        android:id="@+id/actionBarShadow"
+        layout="@layout/shadow_inner_top_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_size"
+        android:layout_marginTop="?actionBarSize"
+        android:alpha="0"/>
+
+    <include
+        layout="@layout/playback_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/playback_bar_size"
+        android:layout_alignParentBottom="true"/>
+
+    <include
+        layout="@layout/shadow_inner_bottom_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/playbackPanel"/>
+</RelativeLayout>

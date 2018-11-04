@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playlistBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/standard_bar_size"
+    android:background="?windowBackground">
+
+    <Button
+        android:id="@+id/playlistButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        style="@style/ActionButton"
+        android:drawableLeft="@drawable/ic_action_list_light"/>
+
+    <TextView
+        android:id="@+id/playlistNextEmpty"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/playlistButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/space_small"
+        android:textAppearance="?textAppearanceSecondary"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="@string/playlist_next_empty"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/playlistNext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/playlistButton"
+        android:padding="@dimen/space_small"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/actionBarItemBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Caption"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:text="@string/playlist_next"/>
+
+        <TextView
+            android:id="@+id/nextEpisodeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Body1"
+            android:singleLine="true"
+            android:ellipsize="marquee"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/shadow_inner_top_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_size"
+        android:layout_alignParentTop="true"/>
+</RelativeLayout>

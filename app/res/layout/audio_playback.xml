@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/playbackPanel"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="?playbackBarBackground">
+
+    <include layout="@layout/playback_empty_messages"/>
+
+    <RelativeLayout
+        android:id="@+id/playbackControl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/primary">
+
+        <include
+            layout="@layout/shadow_inner_top_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shadow_size"
+            android:layout_alignParentTop="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/mediaInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/playbackControls">
+
+            <FrameLayout
+                android:id="@+id/podcastImageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/space_medium"
+                android:layout_marginLeft="@dimen/space_medium"
+                android:layout_marginRight="@dimen/space_medium"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/episodeTitle"
+                android:layout_centerHorizontal="true">
+
+                <mobi.upod.android.widget.SquareFrameByHeightLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/podcastImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:transitionName="podcastImage"
+                        android:background="@drawable/podcast_image_background_large"/>
+                </mobi.upod.android.widget.SquareFrameByHeightLayout>
+                <ImageView
+                    android:id="@+id/currentChapterImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                    android:background="@drawable/podcast_image_background_large"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/episodeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/podcastTitle"
+                android:layout_marginTop="@dimen/space_medium"
+                android:paddingLeft="@dimen/space_medium"
+                android:paddingRight="@dimen/space_medium"
+                android:textAppearance="@style/TextAppearance.Title"
+                android:textColor="@color/text_primary_dark"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Episode Title"/>
+
+            <TextView
+                android:id="@+id/podcastTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="@dimen/space_medium"
+                android:paddingRight="@dimen/space_medium"
+                android:textAppearance="@style/TextAppearance.Subhead"
+                android:textColor="@color/text_secondary_dark"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Podcast Title"/>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/playback_controls"
+            android:id="@+id/playbackControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/playback_chapters_bottom_sheet"
+        android:id="@+id/chapterBottomSheet"/>
+</FrameLayout>

@@ -1,0 +1,13 @@
+/.idea
+/_idea-gradle
+bin/
+build/
+gen/
+target/
+.gradle/
+.d
+*.iml
+com_crashlytics_export_strings.xml
+crashlytics-build.properties
+out.map
+*.hprof

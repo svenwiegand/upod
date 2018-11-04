@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+            android:id="@+id/main_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/playbackPanel"/>
+    <include
+            layout="@layout/playback_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/playback_bar_size"
+            android:layout_alignParentBottom="true"/>
+    <include
+            layout="@layout/shadow_inner_bottom_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/playbackPanel"/>
+</merge>

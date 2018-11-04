@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/podcasts"
+        android:layout_toLeftOf="@+id/playbackPanel"/>
+
+    <include
+        android:id="@+id/actionBarShadow"
+        layout="@layout/shadow_inner_top_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_size"
+        android:layout_alignLeft="@id/main_view"
+        android:layout_alignRight="@id/main_view"
+        android:alpha="0"/>
+
+    <include
+        layout="@layout/playback_bar"
+        android:layout_width="@dimen/playback_bar_size"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"/>
+
+    <include
+        layout="@layout/shadow_inner_right_4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/playbackPanel"/>
+</merge>

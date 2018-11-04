@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/space_medium">
+
+    <mobi.upod.app.gui.playback.PlaybackSpeedIndicatorView
+        android:id="@+id/playbackSpeed"
+        android:layout_width="@dimen/touchable"
+        android:layout_height="@dimen/touchable"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/space_medium"
+        android:clickable="true"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:background="?android:attr/actionBarItemBackground"/>
+
+    <mobi.upod.android.widget.TintableSeekBar
+        android:id="@+id/mediaProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playbackSpeed"/>
+
+    <TextView
+        android:id="@+id/mediaPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mediaProgress"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/space_medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:text="0:00"/>
+
+    <TextView
+        android:id="@+id/mediaDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mediaProgress"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/space_medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:text="0:00"/>
+
+    <mobi.upod.android.widget.ActionButton
+        android:id="@+id/action_media_fast_forward"
+        android:layout_alignBaseline="@+id/action_media_resume"
+        android:layout_toRightOf="@+id/action_media_resume"
+        app:invisibleWhenGone="true"
+        android:layout_marginLeft="@dimen/space_large"
+        style="@style/MediaButton.Large.StandardIcon"
+        android:drawableLeft="@drawable/ic_action_media_fast_forward"/>
+
+    <mobi.upod.android.widget.ActionButton
+        android:id="@+id/action_media_rewind"
+        android:layout_alignBaseline="@+id/action_media_resume"
+        android:layout_toLeftOf="@+id/action_media_resume"
+        app:invisibleWhenGone="true"
+        android:layout_marginRight="@dimen/space_large"
+        style="@style/MediaButton.Large.StandardIcon"
+        android:drawableLeft="@drawable/ic_action_media_fast_rewind"/>
+
+    <ProgressBar
+        android:id="@+id/preparingPlaybackIndicator"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/mediaProgress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_small"
+        style="?android:attr/progressBarStyleLarge"/>
+
+    <mobi.upod.android.widget.FloatingActionButton
+        android:id="@+id/action_media_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mediaProgress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_small"
+        app:invisibleWhenGone="true"
+        android:src="@drawable/ic_action_media_play"/>
+
+    <mobi.upod.android.widget.FloatingActionButton
+        android:id="@+id/action_media_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/action_media_resume"
+        android:layout_centerHorizontal="true"
+        app:invisibleWhenGone="true"
+        android:src="@drawable/ic_action_pause_simple"/>
+
+    <mobi.upod.android.widget.ActionButton
+        android:id="@+id/action_media_skip"
+        android:layout_alignBaseline="@id/action_media_resume"
+        android:layout_toRightOf="@id/action_media_fast_forward"
+        app:invisibleWhenGone="true"
+        android:layout_marginLeft="@dimen/space_large"
+        style="@style/MediaButton.Large.StandardIcon"
+        android:drawableLeft="@drawable/ic_action_media_skip"/>
+
+    <mobi.upod.android.widget.ActionButton
+        android:id="@+id/action_media_stop"
+        android:layout_alignBaseline="@id/action_media_resume"
+        android:layout_toLeftOf="@id/action_media_rewind"
+        app:invisibleWhenGone="true"
+        android:layout_marginRight="@dimen/space_large"
+        style="@style/MediaButton.Large.StandardIcon"
+        android:drawableLeft="@drawable/ic_action_media_stop"/>
+
+    <mobi.upod.app.gui.playback.VolumeGainIndicator
+        android:id="@+id/volumeGain"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignTop="@id/action_media_resume"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/space_medium"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:background="?android:attr/actionBarItemBackground"/>
+    <mobi.upod.app.gui.playback.SleepTimerController
+        android:id="@+id/sleepTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignTop="@id/action_media_resume"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_medium"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:background="?android:attr/actionBarItemBackground"/>
+</RelativeLayout>

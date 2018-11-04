@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/touchable"
+          android:textAppearance="@style/TextAppearance.List.Subhead"
+          android:gravity="start|center_vertical"
+          android:paddingLeft="@dimen/keyline_1"
+          android:paddingRight="@dimen/keyline_1"
+          android:text="Library"
+          android:singleLine="true"
+          android:ellipsize="end"/>

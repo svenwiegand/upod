@@ -1,0 +1,11 @@
+<configuration>
+    <includes>
+        <include resource="assets/config/logback-base.xml"/>
+    </includes>
+
+    <!-- Write INFO (and higher-level) messages to the log file -->
+    <root level="TRACE">
+        <appender-ref ref="logcat"/>
+        <appender-ref ref="file"/>
+    </root>
+</configuration>

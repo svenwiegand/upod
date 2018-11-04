@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="sharedpref" path="mobi.upod.app_preferences.xml"/>
+    <include domain="sharedpref" path="tips.xml"/>
+</full-backup-content>

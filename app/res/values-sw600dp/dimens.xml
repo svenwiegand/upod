@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- discovery grid -->
+    <dimen name="discover_coverart_size">96dp</dimen>
+    <dimen name="discover_item_title_subtitle_space">@dimen/space_small</dimen>
+    <dimen name="discover_item_width">280dp</dimen>
+    <dimen name="discover_item_height">102dp</dimen>
+    <dimen name="discover_item_padding">@dimen/keyline_1</dimen>
+    <dimen name="discover_grid_spacing">@dimen/space_xsmall</dimen>
+</resources>

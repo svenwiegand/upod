@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance" parent="@android:style/TextAppearance"/>
+    <style name="TextAppearance.Secondary">
+        <item name="android:textColor">?textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Header" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">?textColorSecondary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="TextAppearance.Header.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Small" parent="@android:style/TextAppearance.Small"/>
+    <style name="TextAppearance.Small.Secondary">
+        <item name="android:textColor">?textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Small.Title">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/gray_dark</item>
+    </style>
+    <style name="TextAppearance.Small.Header" parent="TextAppearance.Header">
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+    </style>
+    <style name="TextAppearance.Small.Header.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Large" parent="@android:style/TextAppearance.Large"/>
+    <style name="TextAppearance.Large.Secondary">
+        <item name="android:textColor">?textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Large.Title">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/gray_dark</item>
+    </style>
+    <style name="TextAppearance.Large.Header" parent="TextAppearance.Header">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.Large.Header.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.ListItem" parent="@android:style/TextAppearance.Medium">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/gray_dark</item>
+    </style>
+    <style name="TextAppearance.ListItem.Header" parent="@style/TextAppearance.Header"/>
+    <style name="TextAppearance.ListItem.Header.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.ListItem.Title">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/gray_dark</item>
+    </style>
+    <style name="TextAppearance.ListItem.Title.Emphasized">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.ActionBar.Title" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="TextAppearance.ActionBar.Subtitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextAppearance.EmptyList" parent="TextAppearance.ListItem"/>
+
+    <style name="TextAppearance.Wizard.Title" parent="@style/TextAppearance.Display1">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="TextAppearance.Wizard" parent="@style/TextAppearance.Body1">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="TextAppearance.ShowcaseView.Title" parent="TextAppearance.Large.Title">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+</resources>

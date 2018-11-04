@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:support="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_media_route"
+        android:title="@string/mr_button_content_description"
+        support:actionProviderClass="mobi.upod.app.gui.cast.MediaRouteActionProvider"
+        support:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_purchase"
+        android:title="@string/action_purchase"
+        android:menuCategory="secondary"/>
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:upod="http://schemas.android.com/apk/res/mobi.upod.app">
+
+    <Preference
+        android:key="pref_storage_request_permission"
+        android:title="@string/pref_storage_request_permission"
+        android:summary="@string/pref_storage_request_permission_summary"/>
+    <mobi.upod.app.gui.preference.StorageListPreference
+        android:key="pref_storage"
+        android:title="@string/pref_storage"/>
+    <mobi.upod.android.preference.NumberPickerPreference
+        android:key="pref_storage_space_minimum"
+        android:title="@string/pref_storage_space_minimum"
+        android:summary="@string/pref_storage_space_minimum_summary"
+        android:defaultValue="800"
+        android:max="32000"
+        upod:min="0"
+        upod:stepSize="100"
+        upod:numberFormat="%,d"
+        upod:numberUnit="@string/megabytes"/>
+</PreferenceScreen>

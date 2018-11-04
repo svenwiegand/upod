@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/playbackPanel"
+             android:layout_width="@dimen/playback_bar_size"
+             android:layout_height="match_parent"
+             android:background="?playbackBarBackground"
+             android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/playbackControl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mediaInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/actionBarItemBackground">
+
+            <ImageView
+                android:id="@+id/podcastImage"
+                android:layout_width="@dimen/playback_bar_size"
+                android:layout_height="@dimen/playback_bar_size"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"
+                android:transitionName="podcastImage"/>
+
+            <TextView
+                android:id="@+id/podcastTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_small"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textAppearance="@style/TextAppearance.Caption"
+                android:textAllCaps="false"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/episodeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_small"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textAppearance="@style/TextAppearance.Body1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/mediaTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_small"
+                android:singleLine="true"
+                android:textAppearance="?textAppearanceSmallSecondary"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/mediaInfo">
+
+            <mobi.upod.android.widget.ActionButton
+                android:id="@+id/action_media_fast_forward"
+                android:layout_above="@+id/action_media_resume"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_small"
+                app:invisibleWhenGone="true"
+                style="@style/MediaButton"
+                android:drawableLeft="@drawable/ic_action_media_fast_forward_light"/>
+
+            <mobi.upod.android.widget.ActionButton
+                android:id="@+id/action_media_rewind"
+                android:layout_above="@+id/action_media_resume"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_small"
+                app:invisibleWhenGone="true"
+                style="@style/MediaButton"
+                android:drawableLeft="@drawable/ic_action_media_fast_rewind_light"/>
+
+            <ProgressBar
+                android:id="@+id/preparingPlaybackIndicator"
+                android:layout_width="80dp"
+                android:layout_height="64dp"
+                android:layout_above="@+id/action_media_skip"
+                android:layout_centerHorizontal="true"
+                style="?android:attr/progressBarStyleLarge"/>
+
+            <mobi.upod.android.widget.FloatingActionButton
+                android:id="@+id/action_media_resume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/action_media_skip"
+                android:layout_centerHorizontal="true"
+                app:invisibleWhenGone="true"
+                android:src="@drawable/ic_action_media_play"/>
+
+            <mobi.upod.android.widget.FloatingActionButton
+                android:id="@+id/action_media_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/action_media_skip"
+                android:layout_centerHorizontal="true"
+                app:invisibleWhenGone="true"
+                android:src="@drawable/ic_action_pause_simple"/>
+
+            <mobi.upod.android.widget.ActionButton
+                android:id="@+id/action_media_skip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_small"
+                app:invisibleWhenGone="true"
+                style="@style/MediaButton"
+                android:drawableLeft="@drawable/ic_action_media_skip_light"/>
+
+            <mobi.upod.android.widget.ActionButton
+                android:id="@+id/action_media_stop"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_small"
+                app:invisibleWhenGone="true"
+                style="@style/MediaButton"
+                android:drawableLeft="@drawable/ic_action_media_stop_light"/>
+        </RelativeLayout>
+
+        <mobi.upod.android.widget.VerticalTintableProgressBar
+            android:id="@+id/mediaProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/playback_bar_size"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="75"
+            style="@style/Widget.ProgressBar.Vertical.Paddingless"/>
+    </RelativeLayout>
+</FrameLayout>

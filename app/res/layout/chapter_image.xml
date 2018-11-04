@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#aa000000">
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="@style/TextAppearance.Subhead"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="@string/chapter_image_load_error"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/chapterImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/space_large"
+        android:scaleType="centerInside"/>
+</FrameLayout>

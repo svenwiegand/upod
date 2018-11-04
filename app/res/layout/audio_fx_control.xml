@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dialog_padding_h"
+    android:paddingRight="@dimen/dialog_padding_h"
+    android:paddingTop="@dimen/dialog_padding_top">
+    <TextView
+        android:id="@+id/audioGainMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="@style/TextAppearance.Caption"
+        android:text="0.5"/>
+    <TextView
+        android:id="@+id/audioGain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.Body1"
+        android:text="1.0"/>
+    <TextView
+        android:id="@+id/audioGainMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textAppearance="@style/TextAppearance.Caption"
+        android:text="3.0"/>
+    <SeekBar
+        android:id="@+id/audioGainControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/audioGain"
+        android:layout_marginLeft="-8dp"
+        android:layout_marginRight="-8dp"
+        android:layout_marginBottom="@dimen/space_medium"/>
+    <CheckBox
+        android:id="@+id/applyToPodcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audioGainControl"
+        android:layout_marginLeft="-6dp"
+        android:text="@string/apply_to_podcast"/>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+            android:key="pref_license"
+            android:title="@string/pref_license_none"
+            android:summary="@string/pref_license_none_summary"/>
+    <Preference
+            android:key="pref_license_start_trial"
+            android:title="@string/pref_license_start_trial"
+            android:summary="@string/pref_license_start_trial_summary"/>
+    <Preference
+            android:key="pref_license_trial_period"
+            android:title="@string/pref_license_trial_period"/>
+    <Preference
+            android:key="pref_license_purchase"
+            android:title="@string/pref_license_purchase"
+            android:summary="@string/pref_license_purchase_summary"/>
+</PreferenceScreen>

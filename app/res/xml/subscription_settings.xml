@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:upod="http://schemas.android.com/apk/res/mobi.upod.app">
+
+    <CheckBoxPreference
+            android:key="subscription_settings_auto_add_to_playlist"
+            android:title="@string/subscription_settings_auto_add_to_playlist"
+            android:summary="@string/subscription_settings_auto_add_to_playlist_summary"/>
+    <CheckBoxPreference
+            android:key="subscription_settings_auto_add"
+            android:title="@string/subscription_settings_auto_add"
+            android:summary="@string/subscription_settings_auto_add_summary"/>
+    <CheckBoxPreference
+            android:key="subscription_settings_limit_number_of_episodes"
+            android:title="@string/subscription_settings_limit_number_of_episodes"
+            android:summary="@string/subscription_settings_limit_number_of_episodes_summary"/>
+    <mobi.upod.android.preference.NumberPickerPreference
+            android:key="subscription_settings_max_kept_episodes"
+            android:dependency="subscription_settings_limit_number_of_episodes"
+            android:title="@string/subscription_settings_max_kept_episodes"
+            android:summary="@string/subscription_settings_max_kept_episodes_summary"
+            android:defaultValue="1"
+            upod:min="1"
+            android:max="50"/>
+    <CheckBoxPreference
+            android:key="subscription_settings_auto_download"
+            android:title="@string/subscription_settings_auto_download"
+            android:summary="@string/subscription_settings_auto_download_summary"/>
+    <mobi.upod.android.preference.SeekBarPreference
+            android:key="subscription_settings_playback_speed"
+            android:title="@string/subscription_settings_playback_speed"
+            android:summary="@string/subscription_settings_playback_speed_summary"
+            android:defaultValue="1.0"
+            upod:floatMin="0.5"
+            upod:floatMax="2.5"
+            upod:floatStepSize="0.1"
+            upod:floatFormat="%1.1f"/>
+        <mobi.upod.android.preference.SeekBarPreference
+            android:key="subscription_settings_volume_gain"
+            android:title="@string/subscription_settings_volume_gain"
+            android:summary="@string/subscription_settings_volume_gain_summary"
+            android:defaultValue="0.0"
+            upod:floatMin="0.0"
+            upod:floatMax="6.0"
+            upod:floatStepSize="0.1"
+            upod:floatFormat="%1.1f dB"/>
+</PreferenceScreen>

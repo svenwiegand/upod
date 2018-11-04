@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="splitScreen">true</bool>
+    <drawable name="window_content_overlay">@null</drawable>
+    <style name="AudioOverlayTitleStyle" parent="TextOverlay.Title.Large"/>
+</resources>

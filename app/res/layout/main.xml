@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.upod.android.widget.MainNavigationDrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <FrameLayout
+                android:id="@+id/main_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/playbackPanel"/>
+        <include
+                layout="@layout/playback_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/playback_bar_size"
+                android:layout_alignParentBottom="true"/>
+        <include
+                layout="@layout/shadow_inner_bottom_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/playbackPanel"/>
+    </RelativeLayout>
+    <include layout="@layout/drawer"/>
+</mobi.upod.android.widget.MainNavigationDrawerLayout>
+

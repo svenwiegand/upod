@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="mobi.upod.app"
+          android:sharedUserId="mobi.upod.app"
+          android:sharedUserLabel="@string/app_user_name">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission-sdk-23 android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="mobi.upod.app.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="mobi.upod.app.permission.C2D_MESSAGE"/>
+
+    <supports-screens
+            android:resizeable="true"
+            android:smallScreens="true"
+            android:normalScreens="true"
+            android:largeScreens="true"
+            android:xlargeScreens="true"
+            android:anyDensity="true"/>
+
+    <application
+            android:theme="@style/Theme.Light"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:name=".App"
+            android:allowBackup="true"
+            android:fullBackupContent="@xml/backup_rules">
+
+        <!-- meta data -->
+        <!--<meta-data android:name="developmentMode" android:value="true"/>-->
+        <!--<meta-data android:name="upodServiceUrl" android:value="http://192.168.56.1:9000"/>-->
+        <meta-data android:name="upodServiceUrl" android:value="https://upod.herokuapp.com"/>
+        <meta-data android:name="supportEmail" android:value="support@upod.mobi"/>
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.google.android.backup.api_key" android:value="???"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="???"/>
+
+        <!-- activities -->
+        <activity
+                android:name=".gui.MainActivity"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".gui.podcast.PodcastSearchActivity"/>
+        </activity>
+        <activity
+            android:name=".gui.preference.StartupWizardActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Light.NoTitleBar"/>
+        <activity
+            android:name=".gui.preference.UpdateWizardActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Light.NoTitleBar"/>
+        <activity
+            android:name=".gui.sync.SyncConflictActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Light.NoTitleBar"/>
+        <activity
+                android:name=".gui.PodcastEpisodesActivity"
+                android:theme="@style/Theme.Light.ScrollHeader"
+                android:parentActivityName=".gui.MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:label="@string/app_name"
+                    android:value=".gui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".gui.episode.EpisodeDetailsActivity"
+            android:theme="@style/Theme.Light.ScrollHeader"/>
+        <activity
+            android:name=".gui.playback.PlaybackActivity"
+            android:theme="@style/Theme.Light.Playback"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".gui.playback.PlaybackShowNotesActivity"
+            android:theme="@style/Theme.Light"
+            android:parentActivityName=".gui.playback.PlaybackActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".gui.playback.PlaybackActivity" />
+        </activity>
+        <activity
+            android:name=".gui.playback.PlaybackErrorActivity"
+            android:theme="@style/Theme.Light.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".gui.podcast.PodcastSearchActivity"
+            android:parentActivityName=".gui.MainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable_podcasts"/>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:label="@string/app_name"
+                android:value=".gui.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".gui.chapters.ChapterImageActivity"
+            android:theme="@style/Theme.FullImage"/>
+        <activity
+                android:name=".gui.podcast.OpenPodcastUrlActivity"
+                android:label="@string/open_podcast_url_activity"
+                android:theme="@style/Theme.Light.Translucent.NoTitleBar"
+                android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="pcast"/>
+                <data android:scheme="upod"/>
+                <data android:scheme="podcast"/>
+                <data android:scheme="feed"/>
+                <data android:scheme="itpc"/>
+                <data android:scheme="rss"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.xml"/>
+                <data android:pathPattern=".*\\.rss"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="feeds.feedburner.com"/>
+                <data android:host="feedproxy.google.com"/>
+                <data android:host="feeds2.feedburner.com"/>
+                <data android:host="feedsproxy.google.com"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:mimeType="text/xml"/>
+                <data android:mimeType="application/rss+xml"/>
+                <data android:mimeType="application/atom+xml"/>
+                <data android:mimeType="application/xml"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+        </activity>
+        <activity
+                android:name=".gui.podcast.OpenPodcastUriActivity"
+                android:label="@string/open_podcast_url_activity"
+                android:theme="@style/Theme.Light.Translucent.NoTitleBar"
+                android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+                android:name=".gui.opml.OpmlImportActivity"
+                android:label="@string/opml_import"
+                android:theme="@style/Theme.Light.Translucent.NoTitleBar"
+                android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="text/*"/>
+                <data android:mimeType="application/opml"/>
+                <data android:mimeType="application/octet-stream"/>
+                <data android:mimeType="application/xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\\.opml"/>
+                <data android:scheme="file" android:host="*" android:pathPattern=".*\\.xml"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".gui.preference.PreferenceActivity"
+                  android:label="@string/pref_title"
+                  android:theme="@style/Theme.Light.Settings"
+                  android:parentActivityName=".gui.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:label="@string/app_name"
+                android:value=".gui.MainActivity"/>
+        </activity>
+        <activity android:name=".gui.preference.SupportActivity"
+                  android:label="@string/nav_support"
+                  android:parentActivityName=".gui.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:label="@string/app_name"
+                android:value=".gui.MainActivity"/>
+        </activity>
+        <activity android:name=".gui.podcast.SubscriptionSettingsActivity"
+                  android:label="@string/action_subscription_settings"/>
+
+        <!-- services -->
+        <service android:name=".services.sync.SyncServiceImpl"
+                 android:label="uPod Sync Service"
+                 android:stopWithTask="true"/>
+        <service android:name=".services.download.DownloadServiceImpl"
+                 android:label="uPod Download Service"/>
+        <service android:name=".services.playback.PlaybackServiceImpl"
+                 android:label="uPod Playback Service"/>
+        <service android:name=".services.cloudmessaging.CloudMessagingInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".services.cloudmessaging.CloudMessagingEventService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- broadcast receivers -->
+        <receiver android:name=".services.sync.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".services.download.RemoteDownloadActionReceiver">
+            <intent-filter>
+                <action android:name="mobi.upod.app.intent.action.REMOTE_DOWNLOAD_ACTION"/>
+                <data android:scheme="upod" android:host="remote-action.upod.mobi"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".services.playback.RemotePlaybackActionReceiver">
+            <intent-filter>
+                <action android:name="mobi.upod.app.intent.action.REMOTE_PLAYBACK_ACTION"/>
+                <data android:scheme="upod" android:host="remote-action.upod.mobi"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".services.storage.StorageStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".services.playback.MediaControlEventReceiver" android:enabled="false">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".services.licensing.LicensePackageInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package" android:ssp="mobi.upod.app.license"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- providers -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="mobi.upod.app.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"/>
+        </provider>
+    </application>
+</manifest>

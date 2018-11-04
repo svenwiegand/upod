@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/touchable"
+    android:background="?android:attr/actionBarItemBackground"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/chapterStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/space_medium"
+        android:textAppearance="@style/TextAppearance.List.SecondaryText"
+        android:textColor="@color/text_secondary_dark"
+        android:text="12:34"/>
+
+    <ImageView
+        android:id="@+id/currentChapterIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/chapterStart"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_small"
+        android:src="@drawable/ic_action_play_simple"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/chapterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/chapterStart"
+        android:layout_toLeftOf="@+id/actionButtons"
+        android:layout_marginLeft="@dimen/space_medium"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textAppearance="@style/TextAppearance.List"
+        android:textColor="@color/text_primary_dark"
+        android:text="Very long chapter title that should be truncated"/>
+
+    <LinearLayout
+        android:id="@+id/actionButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/maxChapterDuration"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <mobi.upod.android.widget.ActionButton
+            android:id="@+id/showChapterImage"
+            style="@style/MediaButton"
+            android:drawableLeft="@drawable/ic_action_image"
+            android:contentDescription="@string/action_chapter_image"/>
+        <mobi.upod.android.widget.ActionButton
+            android:id="@+id/openChapterLink"
+            style="@style/MediaButton"
+            android:drawableLeft="@drawable/ic_action_link"
+            android:contentDescription="@string/action_chapter_link"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/maxChapterDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_medium"
+        android:visibility="invisible"
+        android:textAppearance="@style/TextAppearance.List.SecondaryText"
+        android:text="15:43"/>
+    <TextView
+        android:id="@+id/chapterDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/maxChapterDuration"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/TextAppearance.List.SecondaryText"
+        android:textColor="@color/text_secondary_dark"
+        android:text="5:43"/>
+</RelativeLayout>

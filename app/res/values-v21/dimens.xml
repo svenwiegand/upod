@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_size_normal_half">28dp</dimen>
+    <dimen name="fab_size_normal_half_negative">-28dp</dimen>
+
+    <dimen name="podcast_header_fab_margin_left">22dp</dimen>
+
+    <dimen name="episode_header_fab_margin_left">16dp</dimen>
+    <dimen name="episode_header_fab_margin_top">-12dp</dimen>
+</resources>

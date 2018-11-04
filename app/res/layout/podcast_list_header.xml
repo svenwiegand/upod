@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/space_medium">
+
+    <RelativeLayout
+        android:id="@+id/podcastTitleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/space_medium"
+        android:background="?colorPrimary">
+
+        <include
+            layout="@layout/podcast_list_header_coverart"
+            android:id="@+id/imageContainer"/>
+
+        <TextView
+            android:id="@+id/podcastTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageContainer"
+            android:layout_marginTop="@dimen/space_medium"
+            android:layout_marginLeft="@dimen/keyline_episode_list_item_title"
+            android:textAppearance="@style/TextAppearance.Title"
+            android:textColor="@color/text_primary_dark"
+            android:text="The Podcast's Title"/>
+
+        <TextView
+            android:id="@+id/podcastCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/podcastTitle"
+            android:layout_alignLeft="@id/podcastTitle"
+            android:textAppearance="@style/TextAppearance.Subhead"
+            android:textColor="@color/text_secondary_dark"
+            android:text="Technology News, Other Category, Even more categories"
+            />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/podcastTitleContainerShadow"
+        layout="@layout/shadow_inner_top_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_size"
+        android:layout_below="@id/podcastTitleContainer"/>
+
+    <mobi.upod.android.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/podcastTitleContainer"
+        android:layout_marginLeft="@dimen/podcast_header_fab_margin_left"
+        android:layout_marginTop="@dimen/fab_size_normal_half_negative"/>
+
+    <TextView
+        android:id="@+id/podcastDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/podcastTitleContainer"
+        android:layout_marginTop="@dimen/space_medium"
+        android:layout_marginLeft="@dimen/keyline_episode_list_item_title"
+        android:layout_marginRight="@dimen/space_medium"
+        android:textAppearance="?textAppearance"
+        android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."/>
+    <mobi.upod.android.widget.ActionPanel
+        android:id="@+id/actionPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/podcastDescription"
+        android:layout_marginLeft="@dimen/keyline_episode_list_item_title"
+        android:layout_marginRight="@dimen/space_medium"
+        app:primaryActionButton="@id/floatingActionButton"/>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/podcast_grid_item_background">
+
+    <mobi.upod.android.widget.SquareFrameByWidthLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/podcastImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?coverartBackground"/>
+
+        <TextView
+            android:id="@+id/episodeCounter"
+            android:layout_gravity="top|right"
+            style="@style/Counter"/>
+
+        <ImageView
+            android:id="@+id/subscriptionIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:src="@drawable/ic_podcast_indicator_subscribed"/>
+
+        <ImageView
+            android:id="@+id/errorIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_podcast_indicator_sync_error"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?activatedListItemBackground"/>
+    </mobi.upod.android.widget.SquareFrameByWidthLayout>
+
+    <TextView
+        android:id="@+id/podcastTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/grid_item_large_text_padding"
+        android:textAppearance="@style/TextAppearance.Subhead"
+        android:lines="2"
+        android:ellipsize="end"
+        android:background="?activatedListItemBackground"/>
+</LinearLayout>

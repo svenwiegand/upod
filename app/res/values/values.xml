@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="largeScreen">false</bool>
+    <bool name="splitScreen">false</bool>
+    <bool name="fullScreenVideo">false</bool>
+    <bool name="hide_action_bar_in_audio_view">true</bool>
+    <drawable name="window_content_overlay">@drawable/pane_shadow_bottom_4</drawable>
+    <style name="AudioOverlayTitleStyle" parent="TextOverlay.Title.Large"/>
+    <string name="defaultPodcastGridType">TinyGrid</string>
+</resources>

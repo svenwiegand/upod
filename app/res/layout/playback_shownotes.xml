@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/playbackPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/playbackControl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/playbackControls"/>
+
+        <include
+            layout="@layout/shadow_inner_bottom_8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shadow_size"
+            android:layout_above="@+id/playbackControls"/>
+
+        <RelativeLayout
+            android:id="@+id/playbackControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?playbackBarBackground">
+
+            <mobi.upod.android.widget.ActionButton
+                android:id="@+id/action_media_fast_forward"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/action_media_resume"
+                app:invisibleWhenGone="true"
+                android:layout_marginLeft="@dimen/seek_button_space"
+                style="@style/MediaButton.Large.StandardIcon"
+                android:drawableLeft="@drawable/ic_action_media_fast_forward"/>
+
+            <mobi.upod.android.widget.ActionButton
+                android:id="@+id/action_media_rewind"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/action_media_resume"
+                app:invisibleWhenGone="true"
+                android:layout_marginRight="@dimen/seek_button_space"
+                style="@style/MediaButton.Large.StandardIcon"
+                android:drawableLeft="@drawable/ic_action_media_fast_rewind"/>
+
+            <ProgressBar
+                android:id="@+id/preparingPlaybackIndicator"
+                android:layout_width="80dp"
+                android:layout_height="64dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                style="?android:attr/progressBarStyleLarge"/>
+
+            <mobi.upod.android.widget.FloatingActionButton
+                android:id="@+id/action_media_resume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_large"
+                app:invisibleWhenGone="true"
+                android:src="@drawable/ic_action_media_play"/>
+
+            <mobi.upod.android.widget.FloatingActionButton
+                android:id="@+id/action_media_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_large"
+                app:invisibleWhenGone="true"
+                android:src="@drawable/ic_action_pause_simple"/>
+
+            <TextView
+                android:id="@+id/mediaPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/space_medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                android:textColor="@color/white"
+                android:text="0:00"/>
+
+            <TextView
+                android:id="@+id/mediaDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/space_medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                android:textColor="@color/white"
+                android:text="0:00"/>
+
+        </RelativeLayout>
+
+        <mobi.upod.android.widget.TintableSeekBar
+            android:id="@+id/mediaProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/playbackControls"/>
+    </RelativeLayout>
+</FrameLayout>

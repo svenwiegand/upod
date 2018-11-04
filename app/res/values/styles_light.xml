@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBar.Transparent" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="TextAppearance.ShowcaseView.Title.Light">
+        <item name="android:textColor">@color/primary_light</item>
+    </style>
+    <style name="ShowcaseView.Light" parent="ShowcaseViewBase">
+        <item name="sv_detailTextAppearance">@style/TextAppearance.ShowcaseView.Detail</item>
+        <item name="sv_backgroundColor">#cc000000</item>
+    </style>
+</resources>

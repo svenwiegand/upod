@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:support="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_mark_unfinished"
+          android:icon="@drawable/ic_action_reload"
+          android:title="@string/action_mark_unfinished"
+          support:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_add_download"
+          android:icon="@drawable/ic_action_download_add"
+          android:title="@string/action_download"
+          support:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_star"
+          android:icon="@drawable/ic_action_star"
+          android:title="@string/action_star"
+          support:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_unstar"
+          android:icon="@drawable/ic_action_unstar"
+          android:title="@string/action_unstar"
+          support:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_remove_from_playlist"
+          android:icon="@drawable/ic_action_dismiss"
+          android:title="@string/action_remove_from_playlist"
+          support:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_mark_read"
+          android:icon="@drawable/ic_action_mark_read"
+          android:title="@string/action_mark_read"
+          support:showAsAction="always"/>
+    <item android:id="@+id/action_mark_finished"
+          android:icon="@drawable/ic_action_finished"
+          android:title="@string/action_mark_finished"
+          support:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_move_to_top"
+          android:title="@string/action_move_to_top"
+          android:showAsAction="never"/>
+    <item android:id="@+id/action_move_to_bottom"
+          android:title="@string/action_move_to_bottom"
+         android:showAsAction="never"/>
+</menu>

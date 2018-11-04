@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <mobi.upod.android.widget.SlidingTitleLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?windowBackground">
+
+        <include layout="@layout/episode_header"/>
+
+        <mobi.upod.android.widget.WebViewWithClampedScrollPositions
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </mobi.upod.android.widget.SlidingTitleLayout>
+
+    <mobi.upod.android.widget.bottomsheet.BottomSheet
+        android:id="@+id/chapterBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?bottomSheetTopMargin">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/chapterList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparent"/>
+            <include
+                layout="@layout/shadow_inner_top_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+    </mobi.upod.android.widget.bottomsheet.BottomSheet>
+</FrameLayout>

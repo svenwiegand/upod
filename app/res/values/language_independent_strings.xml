@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app -->
+    <string name="app_name">uPod</string>
+    <string name="app_user_name">uPod</string>
+
+    <!-- playback -->
+    <string name="action_media_rewind">-%1$ds</string>
+    <string name="action_media_fast_forward">+%1$ds</string>
+</resources>

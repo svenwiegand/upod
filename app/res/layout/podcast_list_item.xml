@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_small"
+        android:background="?activatedListItemBackground">
+
+    <ImageView
+            android:id="@+id/podcastImage"
+            android:layout_width="@dimen/list_coverart_size"
+            android:layout_height="@dimen/list_coverart_size"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/keyline_1"
+            android:layout_marginRight="@dimen/keyline_1"
+            android:layout_marginTop="@dimen/keyline_1_minus_8dp"
+            android:layout_marginBottom="@dimen/keyline_1_minus_8dp"
+            android:background="?coverartBackground"
+            android:elevation="@dimen/elevation_coverart"/>
+    <ImageView
+            android:id="@+id/subscriptionIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/podcastImage"
+            android:layout_alignBottom="@id/podcastImage"
+            android:src="@drawable/ic_podcast_indicator_subscribed"
+            android:elevation="@dimen/elevation_coverart"/>
+    <TextView
+            android:id="@+id/podcastTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/podcastImage"
+            android:layout_toLeftOf="@+id/episodeCounter"
+            android:layout_marginRight="@dimen/space_medium"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.List.PrimaryText"/>
+    <TextView
+            android:id="@+id/episodeCounter"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/Counter.Navigation"/>
+</RelativeLayout>

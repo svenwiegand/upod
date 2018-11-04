@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <mobi.upod.android.view.NonSwipeableViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonBar"/>
+
+    <FrameLayout
+        android:id="@+id/buttonBar"
+        android:layout_alignParentBottom="true"
+        style="@style/CardButtonBar">
+        <Button
+            android:id="@+id/backButton"
+            style="@style/CardButton"
+            android:visibility="invisible"
+            android:layout_marginLeft="@dimen/space_large"
+            android:layout_gravity="start"
+            android:text="@string/wizard_back"/>
+        <Button
+            android:id="@+id/nextButton"
+            style="@style/CardButton.Primary"
+            android:layout_marginRight="@dimen/space_large"
+            android:layout_gravity="end"
+            android:text="@string/wizard_next"/>
+        <Button
+            android:id="@+id/closeButton"
+            style="@style/CardButton.Primary"
+            android:visibility="invisible"
+            android:layout_marginRight="@dimen/space_large"
+            android:layout_gravity="end"
+            android:text="@string/wizard_start"/>
+    </FrameLayout>
+</RelativeLayout>

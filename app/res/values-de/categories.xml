@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category_all">Alle Kategorien</string>
+
+    <string name="category_arts">Kunst</string>
+    <string name="category_arts_design">Design</string>
+    <string name="category_arts_fashion_n_beauty">Fashion &amp; Beauty</string>
+    <string name="category_arts_food">Essen</string>
+    <string name="category_arts_literature">Literatur</string>
+    <string name="category_arts_performing_arts">Darstellende Kunst</string>
+    <string name="category_arts_visual_arts">Bildende Kunst</string>
+
+    <string name="category_business">Wirtschaft</string>
+    <string name="category_business_business_news">Wirtschaftsnachrichten</string>
+    <string name="category_business_careers">Karriere</string>
+    <string name="category_business_investing">Investment</string>
+    <string name="category_business_management_n_marketing">Management &amp; Marketing</string>
+    <string name="category_business_shopping">Shopping</string>
+
+    <string name="category_comedy">Comedy</string>
+
+    <string name="category_education">Bildung</string>
+    <string name="category_education_education">Bildung</string>
+    <string name="category_education_education_technology">Bildungstechnologie</string>
+    <string name="category_education_higher_education">Höhere Bildung</string>
+    <string name="category_education_k_12">Schule</string>
+    <string name="category_education_language_courses">Sprachkurse</string>
+    <string name="category_education_training">Training</string>
+
+    <string name="category_games_n_hobbies">Spiele &amp; Hobbys</string>
+    <string name="category_games_n_hobbies_automotive">Auto</string>
+    <string name="category_games_n_hobbies_aviation">Luftfahrt</string>
+    <string name="category_games_n_hobbies_hobbies">Hobbys</string>
+    <string name="category_games_n_hobbies_other_games">Spiele</string>
+    <string name="category_games_n_hobbies_video_games">Videospiele</string>
+
+    <string name="category_government_n_organizations">Regierung &amp; NGOs</string>
+    <string name="category_government_n_organizations_local">Lokales</string>
+    <string name="category_government_n_organizations_national">Nationales</string>
+    <string name="category_government_n_organizations_non_profit">Gemeinnütziges</string>
+    <string name="category_government_n_organizations_regional">Regionales</string>
+
+    <string name="category_health">Gesundheit</string>
+    <string name="category_health_alternative_health">Alternative Therapien</string>
+    <string name="category_health_fitness_n_nutrition">Fitness &amp; Ernährung</string>
+    <string name="category_health_self_help">Selbsthilfe</string>
+    <string name="category_health_sexuality">Sexualität</string>
+
+    <string name="category_kids_n_family">Familie &amp; Kinder</string>
+
+    <string name="category_music">Musik</string>
+
+    <string name="category_news_n_politics">Nachrichten &amp; Politik</string>
+
+    <string name="category_religion_n_spirituality">Religion &amp; Spiritualität</string>
+    <string name="category_religion_n_spirituality_buddhism">Buddhismus</string>
+    <string name="category_religion_n_spirituality_christianity">Christentum</string>
+    <string name="category_religion_n_spirituality_hinduism">Hinduismus</string>
+    <string name="category_religion_n_spirituality_islam">Islam</string>
+    <string name="category_religion_n_spirituality_judaism">Judentum</string>
+    <string name="category_religion_n_spirituality_other">Religion</string>
+    <string name="category_religion_n_spirituality_spirituality">Spiritualiät</string>
+
+    <string name="category_science_n_medicine">Wissenschaft &amp; Medizin</string>
+    <string name="category_science_n_medicine_medicine">Medizin</string>
+    <string name="category_science_n_medicine_natural_sciences">Naturwissenschaft</string>
+    <string name="category_science_n_medicine_social_sciences">Sozialwissenschaft</string>
+
+    <string name="category_society_n_culture">Gesellschaft &amp; Kultur</string>
+    <string name="category_society_n_culture_history">Geschichte</string>
+    <string name="category_society_n_culture_personal_journals">Tagebücher</string>
+    <string name="category_society_n_culture_philosophy">Philosophie</string>
+    <string name="category_society_n_culture_places_n_travel">Reisen &amp; Orte</string>
+
+    <string name="category_sports_n_recreation">Sport &amp; Freizeit</string>
+    <string name="category_sports_n_recreation_amateur">Amateursport</string>
+    <string name="category_sports_n_recreation_college_n_high_school">Hochschulsport</string>
+    <string name="category_sports_n_recreation_outdoor">Outdoor-Sport</string>
+    <string name="category_sports_n_recreation_professional">Berufssport</string>
+
+    <string name="category_technology">Technologie</string>
+    <string name="category_technology_gadgets">Geräte</string>
+    <string name="category_technology_tech_news">Neues aus der Technik</string>
+    <string name="category_technology_podcasting">Podcasting</string>
+    <string name="category_technology_software_how_to">Software-Tipss</string>
+
+    <string name="category_tv_n_film">TV &amp; Film</string>
+</resources>

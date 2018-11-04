@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- general sizes -->
+    <dimen name="space_xsmall">2dp</dimen>
+    <dimen name="space_small">4dp</dimen>
+    <dimen name="space_medium">8dp</dimen>
+    <dimen name="space_large">16dp</dimen>
+    <dimen name="space_huge">24dp</dimen>
+    <dimen name="space_block">32dp</dimen>
+
+    <dimen name="dialog_padding_h">24dp</dimen>
+    <dimen name="dialog_padding_top">18dp</dimen>
+
+    <dimen name="touchable">48dp</dimen>
+
+    <!-- keylines -->
+    <dimen name="keyline_1">16dp</dimen>
+    <dimen name="keyline_1_minus_8dp">8dp</dimen>
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="keyline_2_minus_16dp">56dp</dimen>
+    <dimen name="keyline_2_session_detail">@dimen/keyline_2</dimen>
+
+    <dimen name="keyline_episode_list_item_title">96dp</dimen>
+    <dimen name="keyline_episode_list_item_title_minus_icon_padding">94dp</dimen>
+
+    <!-- elevations -->
+    <dimen name="elevation_0">0dp</dimen>
+    <dimen name="elevation_2">2dp</dimen>
+    <dimen name="elevation_4">4dp</dimen>
+    <dimen name="elevation_6">6dp</dimen>
+    <dimen name="elevation_8">8dp</dimen>
+
+    <dimen name="elevation_card">2dp</dimen>
+    <dimen name="elevation_app_bar">4dp</dimen>
+
+    <!-- font sizes from android design -->
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_tiny">10sp</dimen>
+
+    <!-- navigation drawer -->
+    <dimen name="nav_drawer_width">250dp</dimen>
+    <dimen name="nav_fragment_width">350dp</dimen>
+
+    <dimen name="nav_header_underline_padding">@dimen/space_medium</dimen>
+    <dimen name="nav_header_height">30dp</dimen>
+
+    <dimen name="nav_item_padding_left">8dp</dimen>
+    <dimen name="nav_item_icon_text_padding">12dp</dimen>
+    <dimen name="nav_item_height">@dimen/touchable</dimen>
+
+    <!-- progress bar -->
+    <dimen name="progress_bar_size">3dp</dimen>
+    <dimen name="seek_bar_track_size">3dp</dimen>
+    <dimen name="seek_bar_thumb_default_size">12dp</dimen>
+    <dimen name="seek_bar_thumb_click_size">18dp</dimen>
+    <dimen name="seek_bar_thumb_disabled_size">8dp</dimen>
+
+    <!-- bars -->
+    <dimen name="standard_bar_size">56dp</dimen>
+    <dimen name="playback_bar_size">56dp</dimen>
+
+    <!-- playback view -->
+    <dimen name="seek_button_space">48dp</dimen>
+
+    <!-- podcast grid -->
+    <dimen name="grid_spacing">4dp</dimen>
+    <dimen name="grid_padding">0dp</dimen>
+    <dimen name="grid_item_large_text_padding">16dp</dimen>
+    <dimen name="grid_item_small_text_padding">8dp</dimen>
+
+    <!-- discovery grid -->
+    <dimen name="discover_coverart_size">80dp</dimen>
+    <dimen name="discover_item_title_subtitle_space">0dp</dimen>
+    <dimen name="discover_item_width">280dp</dimen>
+    <dimen name="discover_item_height">86dp</dimen>
+    <dimen name="discover_item_padding">@dimen/space_medium</dimen>
+    <dimen name="discover_grid_spacing">0dp</dimen>
+
+    <!-- lists -->
+    <dimen name="list_coverart_size">64dp</dimen>
+    <dimen name="elevation_coverart">2dp</dimen>
+
+    <!-- fab -->
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_normal_half">36dp</dimen>
+    <dimen name="fab_size_normal_half_negative">-36dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_size_mini_half">26dp</dimen>
+    <dimen name="fab_size_mini_half_negative">-26dp</dimen>
+    <dimen name="fab_shadow_size">8dp</dimen>
+    <dimen name="fab_mini_shadow_size">6dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="fab_min_significant_scroll">4dp</dimen>
+    <dimen name="fab_elevation_lollipop">8dp</dimen>
+
+    <dimen name="podcast_header_fab_margin_left">14dp</dimen>
+
+    <dimen name="episode_header_fab_margin_left">8dp</dimen>
+    <dimen name="episode_header_fab_margin_top">-20dp</dimen>
+
+    <!-- other stuff -->
+    <dimen name="divider">1dp</dimen>
+    <dimen name="podcast_image_padding">3dp</dimen>
+    <dimen name="shadow_size">24dp</dimen>
+    <dimen name="shadow_size_negative">-24dp</dimen>
+</resources>

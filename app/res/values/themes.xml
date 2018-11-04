@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="Theme.Light" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <!-- app colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorControlNormal">@color/primary</item>
+
+        <!-- action bar -->
+        <item name="actionModeBackground">@color/gray_dark</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_action_dismiss</item>
+
+        <!-- window -->
+        <item name="android:windowContentOverlay">@drawable/window_content_overlay</item>
+        <item name="android:windowBackground">@color/window_background_light</item>
+        <item name="windowBackground">@color/window_background_light</item>
+        <item name="windowBackgroundDragging">@color/window_background_dragging_light</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+
+        <item name="android:alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert</item>
+        <item name="android:dialogTheme">@style/Theme.AppCompat.Light.Dialog</item>
+
+        <!-- lists -->
+        <item name="coverartBackground">@color/white</item>
+        <item name="activatedListItemBackground">@drawable/activated_list_background_selector</item>
+
+        <!-- navigation drawer -->
+        <item name="navDrawerBackground">@drawable/drawer_background</item>
+        <item name="navDrawerItemBackground">@drawable/activated_nav_list_background_selector</item>
+
+        <!-- playback bar -->
+        <item name="playbackBarBackground">@color/playback_bar_background_light</item>
+
+        <!-- showcase view -->
+        <item name="showcaseViewStyle">@style/ShowcaseView.Light</item>
+        <!--<item name="showcaseViewButtonStyle">@style/ShowcaseButton.Default</item>-->
+
+        <!-- text -->
+        <item name="textColorPrimary">@color/text_primary_light</item>
+        <item name="textColorSecondary">@color/text_secondary_light</item>
+        <item name="textColorLargePrimary">@color/text_large_primary_light</item>
+
+        <item name="textColorPrimaryInverse">@color/text_primary_inverse_light</item>
+        <item name="textColorSecondaryInverse">@color/text_secondary_inverse_light</item>
+        <item name="textColorLargePrimaryInverse">@color/text_large_primary_inverse_light</item>
+
+        <item name="textAppearanceSmall">@style/TextAppearance.Small</item>
+        <item name="textAppearanceSmallSecondary">@style/TextAppearance.Small.Secondary</item>
+        <item name="textAppearanceSmallTitle">@style/TextAppearance.Small.Title</item>
+        <item name="textAppearanceSmallHeader">@style/TextAppearance.Small.Header</item>
+        <item name="textAppearanceSmallHeaderBold">@style/TextAppearance.Small.Header.Bold</item>
+
+        <item name="textAppearance">@style/TextAppearance</item>
+        <item name="textAppearanceSecondary">@style/TextAppearance.Secondary</item>
+        <item name="textAppearanceTitle">@style/TextAppearance.Title</item>
+        <item name="textAppearanceHeader">@style/TextAppearance.Header</item>
+        <item name="textAppearanceHeaderBold">@style/TextAppearance.Header.Bold</item>
+
+        <item name="textAppearanceLarge">@style/TextAppearance.Large</item>
+        <item name="textAppearanceLargeSecondary">@style/TextAppearance.Large.Secondary</item>
+        <item name="textAppearanceLargeTitle">@style/TextAppearance.Large.Title</item>
+        <item name="textAppearanceLargeHeader">@style/TextAppearance.Large.Header</item>
+        <item name="textAppearanceLargeHeaderBold">@style/TextAppearance.Large.Header.Bold</item>
+
+        <item name="textAppearanceListItem">@style/TextAppearance.ListItem</item>
+        <item name="textAppearanceListItemHeader">@style/TextAppearance.ListItem.Header</item>
+        <item name="textAppearanceListItemHeaderBold">@style/TextAppearance.ListItem.Header.Bold</item>
+        <item name="textAppearanceListItemTitle">@style/TextAppearance.ListItem.Title</item>
+        <item name="textAppearanceListItemTitleEmphasized">@style/TextAppearance.ListItem.Title.Emphasized</item>
+        <item name="textAppearanceEmptyList">@style/TextAppearance.EmptyList</item>
+
+        <!-- media router style -->
+        <item name="isLightTheme">true</item>
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="Theme.Light.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Theme.Light.Translucent.NoTitleBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.Light.NoTitleBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="Theme.Light.Playback">
+        <item name="actionBarStyle">@style/ActionBar.Transparent</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_playlist</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.Light.ScrollHeader">
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/ActionBar.Transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="bottomSheetTopMargin">?android:attr/actionBarSize</item>
+    </style>
+    <style name="Theme.Light.Settings">
+    </style>
+
+    <style name="Theme.FullImage" parent="Theme.Light.Translucent">
+        <item name="colorPrimary">@color/gray_dark</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_dismiss</item>
+    </style>
+</resources>

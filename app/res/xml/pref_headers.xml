@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:fragment="mobi.upod.app.gui.preference.UiPreferenceFragment"
+        android:title="@string/pref_category_ui"
+        android:icon="@drawable/ic_pref_ui_light"/>
+    <header
+        android:fragment="mobi.upod.app.gui.preference.PlaybackPreferenceFragment"
+        android:title="@string/pref_category_playback"
+        android:icon="@drawable/ic_pref_playback_light"/>
+    <header
+        android:fragment="mobi.upod.app.gui.preference.SyncPreferenceFragment"
+        android:title="@string/pref_category_sync"
+        android:icon="@drawable/ic_pref_sync_light"/>
+    <header
+        android:fragment="mobi.upod.app.gui.preference.DownloadPreferenceFragment"
+        android:title="@string/pref_category_download"
+        android:icon="@drawable/ic_pref_download_light"/>
+    <header
+        android:fragment="mobi.upod.app.gui.preference.StoragePreferenceFragment"
+        android:title="@string/pref_category_storage"
+        android:icon="@drawable/ic_pref_storage_light"/>
+    <header
+        android:fragment="mobi.upod.app.gui.preference.LicensePreferenceFragment"
+        android:title="@string/pref_category_license"
+        android:icon="@drawable/ic_pref_license_light"/>
+</preference-headers>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="view_mode">
+        <item>@string/view_mode_podcasts</item>
+        <item>@string/view_mode_episodes</item>
+        <item>@string/view_mode_grouped_episodes</item>
+    </string-array>
+
+    <!-- ui -->
+    <string-array name="pref_media_position_format_values">
+        <item>CurrentAndDuration</item>
+        <item>RemainingAndDuration</item>
+        <item>CurrentAndRemaining</item>
+    </string-array>
+    <string-array name="pref_media_position_format_entries">
+        <item>@string/pref_media_position_format_entry_current_and_duration</item>
+        <item>@string/pref_media_position_format_entry_remaining_and_duration</item>
+        <item>@string/pref_media_position_format_entry_current_and_remaining</item>
+    </string-array>
+    <string-array name="pref_media_position_format_summaries">
+        <item>@string/pref_media_position_format_summary_current_and_duration</item>
+        <item>@string/pref_media_position_format_summary_remaining_and_duration</item>
+        <item>@string/pref_media_position_format_summary_current_and_remaining</item>
+    </string-array>
+
+    <string-array name="pref_primary_download_action_values">
+        <item>AddToDownloadQueue</item>
+        <item>Download</item>
+        <item>AddToPlaylist</item>
+        <item>Stream</item>
+    </string-array>
+    <string-array name="pref_primary_download_action_entries">
+        <item>@string/pref_primary_download_action_entry_queue</item>
+        <item>@string/pref_primary_download_action_entry_download</item>
+        <item>@string/pref_primary_download_action_entry_playlist</item>
+        <item>@string/pref_primary_download_action_entry_stream</item>
+    </string-array>
+    <string-array name="pref_primary_download_action_summaries">
+        <item>@string/pref_primary_download_action_summary_queue</item>
+        <item>@string/pref_primary_download_action_summary_download</item>
+        <item>@string/pref_primary_download_action_summary_playlist</item>
+        <item>@string/pref_primary_download_action_summary_stream</item>
+    </string-array>
+
+    <string-array name="pref_add_as_primary_new_action_values">
+        <item>Never</item>
+        <item>NotDownloaded</item>
+        <item>Always</item>
+    </string-array>
+    <string-array name="pref_add_as_primary_new_action_entries">
+        <item>@string/pref_add_as_primary_new_action_entry_never</item>
+        <item>@string/pref_add_as_primary_new_action_entry_not_downloaded</item>
+        <item>@string/pref_add_as_primary_new_action_entry_always</item>
+    </string-array>
+    <string-array name="pref_add_as_primary_new_action_summaries">
+        <item>@string/pref_add_as_primary_new_action_summary_never</item>
+        <item>@string/pref_add_as_primary_new_action_summary_not_downloaded</item>
+        <item>@string/pref_add_as_primary_new_action_summary_always</item>
+    </string-array>
+
+    <string-array name="pref_podcast_grid_type_values">
+        <item>LargeGrid</item>
+        <item>TinyGrid</item>
+    </string-array>
+    <string-array name="pref_podcast_grid_type_entries">
+        <item>@string/pref_podcast_grid_type_entry_large</item>
+        <item>@string/pref_podcast_grid_type_entry_tiny</item>
+    </string-array>
+    <string-array name="pref_podcast_grid_type_summaries">
+        <item>@string/pref_podcast_grid_type_summary_large</item>
+        <item>@string/pref_podcast_grid_type_summary_tiny</item>
+    </string-array>
+
+    <!-- playback -->
+    <string-array name="pref_playback_notification_buttons_values">
+        <item>StopPlaySkip</item>
+        <item>StopPlayFastForward</item>
+        <item>RewindPlayFastForward</item>
+    </string-array>
+    <string-array name="pref_playback_notification_buttons_entries">
+        <item>@string/pref_playback_notification_buttons_entry_stop_play_skip</item>
+        <item>@string/pref_playback_notification_buttons_entry_stop_play_fastforward</item>
+        <item>@string/pref_playback_notification_buttons_entry_rewind_play_fastforward</item>
+    </string-array>
+    <string-array name="pref_playback_notification_buttons_summaries">
+        <item>@string/pref_playback_notification_buttons_summary_stop_play_skip</item>
+        <item>@string/pref_playback_notification_buttons_summary_stop_play_fastforward</item>
+        <item>@string/pref_playback_notification_buttons_summary_rewind_play_fastforward</item>
+    </string-array>
+
+    <string-array name="pref_play_not_downloaded_episodes_values">
+        <item>Skip</item>
+        <item>StreamOnWifi</item>
+        <item>Stream</item>
+    </string-array>
+    <string-array name="pref_play_not_downloaded_episodes_entries">
+        <item>@string/pref_play_not_downloaded_episodes_skip</item>
+        <item>@string/pref_play_not_downloaded_episodes_stream_on_wifi</item>
+        <item>@string/pref_play_not_downloaded_episodes_stream</item>
+    </string-array>
+    <string-array name="pref_play_not_downloaded_episodes_summaries">
+        <item>@string/pref_play_not_downloaded_episodes_summary_skip</item>
+        <item>@string/pref_play_not_downloaded_episodes_summary_stream_on_wifi</item>
+        <item>@string/pref_play_not_downloaded_episodes_summary_stream</item>
+    </string-array>
+
+    <string-array name="pref_auto_show_playback_view_values">
+        <item>Never</item>
+        <item>Video</item>
+        <item>Always</item>
+    </string-array>
+    <string-array name="pref_auto_show_playback_view_entries">
+        <item>@string/pref_auto_show_playback_view_entry_never</item>
+        <item>@string/pref_auto_show_playback_view_entry_video</item>
+        <item>@string/pref_auto_show_playback_view_entry_always</item>
+    </string-array>
+    <string-array name="pref_auto_show_playback_view_summaries">
+        <item>@string/pref_auto_show_playback_view_summary_never</item>
+        <item>@string/pref_auto_show_playback_view_summary_video</item>
+        <item>@string/pref_auto_show_playback_view_summary_always</item>
+    </string-array>
+
+    <string-array name="pref_audio_player_values">
+        <item>Android</item>
+        <item>Sonic</item>
+    </string-array>
+
+    <!-- sync -->
+    <string-array name="pref_sync_frequency_values">
+        <item>0</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+        <item>360</item>
+        <item>480</item>
+        <item>720</item>
+        <item>1440</item>
+    </string-array>
+
+    <!-- download -->
+    <string-array name="pref_auto_add_download_strategy_values">
+        <item>Manual</item>
+        <item>Playlist</item>
+        <item>Library</item>
+        <item>NewAndLibrary</item>
+    </string-array>
+
+    <string-array name="pref_auto_start_download_strategy_values">
+        <item>Manual</item>
+        <item>NonMeteredConnection</item>
+        <item>AnyConnection</item>
+    </string-array>
+    <string-array name="pref_auto_start_download_strategy_entries">
+        <item>@string/pref_auto_start_download_strategy_entry_manual</item>
+        <item>@string/pref_auto_start_download_strategy_entry_non_metered_connection</item>
+        <item>@string/pref_auto_start_download_strategy_entry_any_connection</item>
+    </string-array>
+    <string-array name="pref_auto_start_download_strategy_summaries">
+        <item>@string/pref_auto_start_download_strategy_summary_manual</item>
+        <item>@string/pref_auto_start_download_strategy_summary_non_metered_connection</item>
+        <item>@string/pref_auto_start_download_strategy_summary_any_connection</item>
+    </string-array>
+</resources>

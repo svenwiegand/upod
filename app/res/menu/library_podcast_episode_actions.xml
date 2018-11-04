@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:support="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_sort_episodes_asc"
+          android:title="@string/action_sort_episodes_ascending"/>
+    <item android:id="@+id/action_sort_episodes_desc"
+          android:title="@string/action_sort_episodes_descending"/>
+    <item android:id="@+id/action_share"
+          android:icon="@drawable/ic_action_share"
+          android:title="@string/action_share_podcast"
+          support:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_podcast_subscribe"
+          android:icon="@drawable/ic_action_subscribe"
+          android:title="@string/action_podcast_subscribe"/>
+    <item android:id="@+id/action_podcast_unsubscribe"
+          android:title="@string/action_podcast_unsubscribe"/>
+    <item android:id="@+id/action_podcast_delete"
+          android:title="@string/action_podcast_delete"/>
+    <item android:id="@+id/action_subscription_settings"
+          android:title="@string/action_subscription_settings"/>
+    <item android:id="@+id/action_podcast_update_coverart"
+          android:title="@string/action_podcast_update_coverart"/>
+    <item android:id="@+id/action_podcast_sync_error"
+          android:title="@string/action_podcast_sync_error"
+          android:icon="@drawable/ic_action_sync_error"/>
+</menu>

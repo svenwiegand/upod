@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/playbackPanel"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="?playbackBarBackground">
+
+    <include layout="@layout/playback_empty_messages"/>
+
+    <RelativeLayout
+        android:id="@+id/playbackControl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/primary">
+
+        <mobi.upod.android.widget.VideoContainerLayout
+            android:id="@+id/videoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            app:fixed_dimension="width">
+
+            <TextureView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/previewImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@color/black"
+                android:visibility="gone"/>
+        </mobi.upod.android.widget.VideoContainerLayout>
+
+        <RelativeLayout
+            android:id="@+id/mediaInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videoContainer"
+            android:padding="@dimen/space_medium"
+            android:clickable="true"
+            android:background="?android:attr/actionBarItemBackground">
+
+            <ImageView
+                android:id="@+id/podcastImage"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/podcast_image_background"/>
+
+            <TextView
+                android:id="@+id/episodeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/podcastImage"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:textAppearance="@style/TextAppearance.Title"
+                android:textColor="@color/text_primary_dark"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Very long episode title to make it break over two lines and truncated in the end"/>
+
+            <TextView
+                android:id="@+id/podcastTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/episodeTitle"
+                android:layout_alignLeft="@id/episodeTitle"
+                android:padding="@dimen/space_small"
+                android:textAppearance="@style/TextAppearance.Subhead"
+                android:textColor="@color/text_secondary_dark"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Podcast Title"/>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/playback_controls"
+            android:id="@+id/playbackControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/playback_chapters_bottom_sheet"
+        android:id="@+id/chapterBottomSheet"/>
+</FrameLayout>

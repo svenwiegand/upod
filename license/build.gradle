@@ -1,0 +1,60 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.0'
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+apply plugin: "com.android.application"
+
+android {
+    compileSdkVersion "android-25"
+    buildToolsVersion "26.0.1"
+
+    defaultConfig {
+        targetSdkVersion 25
+        minSdkVersion 14
+        versionCode Integer.parseInt(VERSION_CODE)
+        versionName VERSION_NAME
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("../keystore-debug.jks")
+        }
+
+        release {
+            storeFile file("../keystore.jks")
+            storePassword "???"
+            keyAlias "???"
+            keyPassword "???"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            aidl.srcDirs = ['src']
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+}
+
+dependencies {
+}

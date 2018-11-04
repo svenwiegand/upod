@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.upod.android.widget.bottomsheet.BottomSheet
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chapterBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?actionBarSize"
+    app:persistentView="@+id/chapterBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="64dp">
+
+        <RelativeLayout
+            android:id="@+id/chapterBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/touchable"
+            android:layout_alignParentTop="true"
+            android:background="@color/primary">
+
+            <ImageView
+                android:id="@+id/chapterIcon"
+                android:layout_width="@dimen/touchable"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_action_chapter"
+                android:background="?android:attr/actionBarItemBackground"/>
+            <TextView
+                android:id="@+id/chapterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/chapterIcon"
+                android:layout_toLeftOf="@+id/actionButtons"
+                android:paddingTop="@dimen/space_small"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textAppearance="@style/TextAppearance.Subhead"
+                android:textColor="@color/text_primary_dark"
+                android:text="Very long chapter title that should be "/>
+            <TextView
+                android:id="@+id/chapterTime"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@id/chapterTitle"
+                android:layout_toLeftOf="@+id/actionButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_small"
+                android:paddingLeft="@dimen/space_small"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textAppearance="?textAppearanceSmallSecondary"
+                android:textColor="@color/text_secondary_dark"
+                android:text="1:20 / 5:20"/>
+
+            <LinearLayout
+                android:id="@+id/actionButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <mobi.upod.android.widget.ActionButton
+                    android:id="@+id/openChapterLink"
+                    style="@style/MediaButton"
+                    android:drawableLeft="@drawable/ic_action_link"
+                    android:contentDescription="@string/action_chapter_link"/>
+
+                <mobi.upod.android.widget.ActionButton
+                    android:id="@+id/chapterBack"
+                    android:layout_width="@dimen/touchable"
+                    android:layout_height="@dimen/touchable"
+                    style="@style/MediaButton"
+                    android:drawableLeft="@drawable/ic_action_chapter_back"
+                    android:contentDescription="@string/action_chapter_back"/>
+
+                <mobi.upod.android.widget.ActionButton
+                    android:id="@+id/chapterSkip"
+                    android:layout_width="@dimen/touchable"
+                    android:layout_height="@dimen/touchable"
+                    style="@style/MediaButton"
+                    android:drawableLeft="@drawable/ic_action_chapter_next"
+                    android:contentDescription="@string/action_chapter_next"/>
+
+            </LinearLayout>
+
+            <mobi.upod.android.widget.HorizontalTintableProgressBar
+                android:id="@+id/chapterProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                style="@style/Widget.ProgressBar.Horizontal.Paddingless"/>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/chapterList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/chapterBar"
+            android:divider="@color/transparent"/>
+        <RelativeLayout
+            android:id="@+id/premiumHint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/chapterBar"
+            android:padding="@dimen/space_block">
+            <TextView
+                android:id="@+id/premiumHintText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.Body1"
+                android:textColor="@color/text_primary_dark"
+                android:text="@string/chapter_premium_hint"/>
+            <Button
+                android:id="@+id/action_purchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/premiumHintText"
+                android:layout_centerHorizontal="true"
+                style="@style/CardButton"
+                android:textColor="@color/white"
+                android:text="@string/purchase_request_more"/>
+        </RelativeLayout>
+        <include
+            layout="@layout/shadow_inner_top_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chapterBar"/>
+
+    </RelativeLayout>
+
+</mobi.upod.android.widget.bottomsheet.BottomSheet>

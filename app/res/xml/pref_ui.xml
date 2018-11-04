@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:upod="http://schemas.android.com/apk/res/mobi.upod.app">
+
+    <PreferenceCategory android:title="@string/pref_category_workflow">
+        <CheckBoxPreference
+            android:key="pref_auto_add_to_playlist"
+            android:title="@string/pref_auto_add_to_playlist"
+            android:summary="@string/pref_auto_add_to_playlist_summary"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="pref_skip_inbox"
+            android:title="@string/pref_skip_new"
+            android:summary="@string/pref_skip_new_summary"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="pref_hide_new_in_library"
+            android:title="@string/pref_hide_new_in_library"
+            android:summary="@string/pref_hide_new_in_library_summary"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:key="pref_notify_new_episodes"
+            android:title="@string/pref_notify_new_episodes"
+            android:summary="@string/pref_notify_new_episodes_summary"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_filters">
+        <CheckBoxPreference
+            android:key="pref_filter_media_type"
+            android:title="@string/pref_filter_media_type"
+            android:summary="@string/pref_filter_media_type_summary"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:key="pref_filter_downloaded"
+            android:title="@string/pref_filter_downloaded"
+            android:summary="@string/pref_filter_downloaded_summary"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_primary_action">
+        <mobi.upod.android.preference.ListPreferenceWithEntrySummary
+            android:key="pref_primary_download_action"
+            android:title="@string/pref_primary_download_action"
+            android:dialogTitle="@string/pref_primary_download_action_selection_title"
+            android:entryValues="@array/pref_primary_download_action_values"
+            android:entries="@array/pref_primary_download_action_entries"
+            upod:summaries="@array/pref_primary_download_action_summaries"
+            android:defaultValue="AddToPlaylist"/>
+        <mobi.upod.android.preference.ListPreferenceWithEntrySummary
+            android:key="pref_add_as_primary_new_action"
+            android:title="@string/pref_add_as_primary_new_action"
+            android:dialogTitle="@string/pref_add_as_primary_new_action_selection_title"
+            android:entryValues="@array/pref_add_as_primary_new_action_values"
+            android:entries="@array/pref_add_as_primary_new_action_entries"
+            upod:summaries="@array/pref_add_as_primary_new_action_summaries"
+            android:defaultValue="Always"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_podcast_grid">
+        <mobi.upod.android.preference.ListPreferenceWithEntrySummary
+            android:key="pref_podcast_grid_type"
+            android:title="@string/pref_podcast_grid_type"
+            android:dialogTitle="@string/pref_podcast_grid_type_selection_title"
+            android:entryValues="@array/pref_podcast_grid_type_values"
+            android:entries="@array/pref_podcast_grid_type_entries"
+            upod:summaries="@array/pref_podcast_grid_type_summaries"
+            android:defaultValue="@string/defaultPodcastGridType"/>
+        <CheckBoxPreference
+            android:key="pref_podcast_grid_show_title"
+            android:title="@string/pref_podcast_grid_show_title"
+            android:summary="@string/pref_podcast_grid_show_title_summary"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+            android:id="@+id/podcasts"
+            android:layout_width="@dimen/nav_fragment_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="?navDrawerBackground">
+        <fragment
+                android:id="@+id/podcastList"
+                class="mobi.upod.app.gui.podcast.PodcastListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        <include
+            layout="@layout/shadow_inner_top_8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shadow_size"
+            android:layout_gravity="top|center"/>
+    </FrameLayout>
+    <include layout="@layout/podcast_episodes_main"/>
+</RelativeLayout>

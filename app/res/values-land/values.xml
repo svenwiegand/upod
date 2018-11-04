@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="fullScreenVideo">true</bool>
+    <bool name="hide_action_bar_in_audio_view">false</bool>
+    <style name="AudioOverlayTitleStyle" parent="TextOverlay.Title"/>
+</resources>

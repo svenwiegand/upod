@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView style="@style/Card">
+
+        <LinearLayout style="@style/CardBody">
+
+            <TextView
+                android:id="@+id/cardTitle"
+                style="@style/CardTitle"
+                android:text="Card Title"/>
+
+            <LinearLayout
+                android:id="@+id/cardContent"
+                android:orientation="vertical"
+                style="@style/CardContent"/>
+
+            <View style="@style/CardDivider"/>
+
+            <LinearLayout
+                android:id="@+id/cardButtonBar"
+                style="@style/CardButtonBar"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</merge>

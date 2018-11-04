@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:support="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/action_mark_all_read"
+            android:icon="@drawable/ic_action_mark_read"
+            android:title="@string/action_mark_all_read"
+            support:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/action_mark_all_finished"
+            android:icon="@drawable/ic_action_finished"
+            android:title="@string/action_mark_all_finished"
+            support:showAsAction="ifRoom"/>
+
+</menu>

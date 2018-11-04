@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_dark">#444444</color>
+    <color name="black">#000000</color>
+    <color name="dimmed_light">#33000000</color>
+    <color name="dimmed">#dd000000</color>
+    <color name="dimmed_white">#aaffffff</color>
+
+    <!-- key colors -->
+    <color name="primary">#00acc1</color>
+    <color name="primary_light">#4dd0e1</color>
+    <color name="primary_dark">#0097a7</color>
+    <color name="accent">#00acc1</color>
+    <color name="accent_dark">#0097a7</color>
+    <color name="secondary_accent">#e91e63</color>
+    <color name="secondary_accent_dark">#c2185b</color>
+
+    <!-- progress bar -->
+    <color name="progress_background">#227f7f7f</color>
+    <color name="progress_primary">#00acc1</color>
+    <color name="progress_secondary">#7000acc1</color>
+
+    <!-- action bar -->
+    <color name="contextual_background">#666666</color>
+
+    <!-- fab colors -->
+    <color name="fab_normal">@color/secondary_accent</color>
+    <color name="fab_pressed">@color/secondary_accent_dark</color>
+</resources>

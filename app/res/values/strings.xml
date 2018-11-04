@@ -1,0 +1,1480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the app -->
+    <string name="about_details"><![CDATA[<b>uPod version %s by&nbsp;Sven&nbsp;Wiegand</b>
+        <br/><br/><a href="#">show open source licenses</a>]]></string>
+
+    <!-- date formats -->
+    <string name="tomorrow">\'tomorrow \'H:mm</string>
+    <string name="today"
+            comment="Timestamp for episodes from today. Keep the apostrophs! Use H for hour from 0-23 or h for hour in am/pm from 1-12; Use mm for minutes in hour; Optionally use a for AM/PM marker"
+            >\'today \'H:mm</string>
+    <string name="yesterday"
+            comment="Timestamp for episodes from yesterday. Keep the apostrophs! Use H for hour from 0-23 or h for hour in am/pm from 1-12; Use mm for minutes in hour; Optionally use a for AM/PM marker"
+            >\'yesterday \'H:mm</string>
+    <string name="date_week"
+            comment="Timestamp for episodes from within the last six days. Use EEEE for the weekday's full name\nUse H for hour from 0-23 or h for hour in am/pm from 1-12\nUse mm for minutes in hour\nOptionally use a for AM/PM marker"
+            >EEEE H:mm</string>
+    <string name="date_year"
+            comment="Timestamp for episodes from this year\nUse MMMM for the full name of the month\nUse d for the number of the day within the month"
+            >MMMM d</string>
+    <string name="date_full"
+            comment="Timestamp for episodes older than a year\nUse MMM for the abbreviation of the month\nUse d for the number of the day within the month\nUse yyyy for the number of the year"
+            >MMM d, yyyy</string>
+
+    <!-- buttons -->
+    <string name="yes"
+            comment="dialog 'Yes' button"
+            >Yes</string>
+    <string name="no"
+            comment="dialog 'No' button"
+            >No</string>
+    <string name="ok"
+            comment="dialog 'OK' button"
+            >OK</string>
+    <string name="cancel"
+            comment="dialog 'Cancel' button"
+            >Cancel</string>
+    <string name="close"
+            comment="dialog 'Close' button"
+            >Close</string>
+    <string name="retry"
+            comment="dialog 'Retry' button e.g. to retry a failed operation"
+            >Retry</string>
+    <string name="instructions"
+            comment="'Instructions' button e.g. when tapping the inactive playback speed controller to open a web page providing instructions for how to enable playback speed control"
+            >Instructions</string>
+    <string name="got_it"
+            comment="'Got it!' button to dismiss a showcase tip as shown when starting uPod for the first time to highlight specific controls in the user interface"
+            >Got it!</string>
+    <string name="not_now">Not now</string>
+    <string name="help">Help</string>
+
+    <!-- navigation -->
+    <string name="nav_discover"
+            comment="section header in the navigation drawer"
+            >Podcasts</string>
+    <string name="nav_podcasts"
+            comment="entry in the navigation drawer"
+            >My podcasts</string>
+    <string name="nav_find_podcasts"
+            comment=""
+            >Find podcasts</string>
+    <string name="nav_find_popular_podcasts"
+            comment="entry in the navigation drawer"
+            >Popular podcasts</string>
+
+    <string name="nav_library"
+            comment="section header in the navigation drawer"
+            >Saved for later</string>
+    <string name="nav_new"
+            comment="entry in the navigation drawer"
+            >New</string>
+    <string name="nav_unfinished"
+            comment="entry in the navigation drawer"
+            >All</string>
+    <string name="nav_audio"
+            comment="entry in the navigation drawer"
+            >Audio</string>
+    <string name="nav_video"
+            comment="entry in the navigation drawer"
+            >Video</string>
+    <string name="nav_downloaded"
+            comment="entry in the navigation drawer"
+            >Downloaded</string>
+    <string name="nav_finished"
+            comment="entry in the navigation drawer"
+            >Recently finished</string>
+    <string name="nav_starred"
+            comment="entry in the navigation drawer"
+            >Starred</string>
+
+    <string name="nav_playlist"
+            comment="entry in the navigation drawer"
+            >Playlist</string>
+    <string name="nav_downloads"
+            comment="entry in the navigation drawer"
+            >Download queue</string>
+
+    <string name="nav_settings">Settings</string>
+    <string name="nav_support">Help &amp; support</string>
+
+    <!-- empty texts -->
+    <string name="empty_new"
+            comment="message shown in the 'New' section when there are no new episodes"
+            >No new episodes</string>
+    <string name="empty_unfinished"
+            comment="message shown in the 'Unfinished' section when there are no unfinished episodes"
+            >No unfinished episodes</string>
+    <string name="empty_audio"
+            comment="message shown in the 'Audio' section when there are no unfinished audio episodes"
+            >No unfinished audio episodes</string>
+    <string name="empty_video"
+            comment="message shown in the 'Video' section when there are no unfinished video episodes"
+            >No unfinished video episodes</string>
+    <string name="empty_downloaded"
+            comment="message shown in the 'Downloaded' section when there are no unfinished downloaded episodes"
+            >No unfinished downloaded episodes</string>
+    <string name="empty_finished"
+            comment="message shown in the 'Finished' section when there are no recently finished episodes"
+            >No recently finished episodes</string>
+    <string name="empty_starred"
+            comment="message shown in the 'Starred' section when there are no starred episodes"
+            >No starred episodes</string>
+    <string name="empty_playlist"
+            comment="message shown in the 'Playlist' section when the playlist is empty"
+            >Your playlist is empty</string>
+    <string name="empty_download_list"
+            comment="message shown in the 'Download' section when the download queue is empty"
+            >No episodes scheduled for download</string>
+
+    <string name="empty_popular"
+            comment="message shown in the 'Find podcasts' section when no popular podcasts have been found for the current category"
+            >No popular podcasts found</string>
+    <string name="empty_search"
+            comment="message shown in the 'Find podcasts' section when no popular podcasts have been found for the current search query"
+            >No matching podcasts found</string>
+
+    <!-- view mode -->
+    <string name="view_mode_podcasts"
+            comment="episode list view mode; can be selected from a list when tapping the window title"
+            >Podcasts</string>
+    <string name="view_mode_episodes"
+            comment="episode list view mode; can be selected from a list when tapping the window title"
+            >Episodes</string>
+    <string name="view_mode_grouped_episodes"
+            comment="episode list view mode that lists episodes grouped by podcasts; can be selected from a list when tapping the window title"
+            >Grouped episodes</string>
+
+    <!-- actions -->
+    <string name="action_purchase"
+            comment="action item"
+            >Premium…</string>
+    <string name="action_open_drawer"
+            comment="action item"
+            >Open navigation drawer</string>
+    <string name="action_close_drawer"
+            comment="action item"
+            >Close navigation drawer</string>
+
+    <string name="action_add_to_library"
+            comment="action item: adds the currently shown episode to my episodes"
+            >Add to my episodes</string>
+    <string name="action_add_all_to_library"
+            comment="action item: adds all selected episodes to my episodes"
+            >Add all to my episodes</string>
+    <string name="action_mark_read"
+            comment="action item: mark episode as not-new and save it in my episodes"
+            >Save for later</string>
+    <string name="action_mark_all_read"
+            comment="action item: mark all episode as not-new and save them in my episodes"
+            >Save all for later</string>
+    <string name="action_mark_finished"
+            comment="action item: mark episode as finished"
+            >Mark finished</string>
+    <string name="action_mark_all_finished"
+            comment="action item: mark all listed episodes as finished"
+            >Mark all finished</string>
+    <string name="action_mark_finished_from_here">Mark finished from here</string>
+    <string name="action_mark_finished_to_here">Mark finished until here</string>
+    <string name="action_mark_unfinished"
+            comment="action item: mark a finished episode as unfinished"
+            >Mark unfinished</string>
+
+    <string name="action_stream"
+            comment="action item: starts playback for an episode which has not been downloaded"
+            >Stream</string>
+    <string name="action_cast"
+            comment="action item: starts playback of an episode on a remote device (e.g. chromecast)"
+            >Cast</string>
+    <string name="action_pause"
+            comment="action item: pause playback"
+            >Pause</string>
+    <string name="action_play"
+            comment="action item: start/resume playback"
+            >Play</string>
+    <string name="action_play_next"
+            comment="action item: insert episode at the second position of the playlist"
+            >Play next</string>
+    <string name="action_add_to_playlist"
+            comment="action item: add episode to the end of the playlist"
+            >Add to playlist</string>
+    <string name="action_remove_from_playlist"
+            comment="action item"
+            >Remove from playlist</string>
+    <string name="action_random_episode"
+            comment="action item: pick a random episode and add it to the end of the playlist"
+            >Add random episode</string>
+    <string name="action_show_notes">Show notes</string>
+
+    <string name="action_download"
+            comment="action item"
+            >Download</string>
+    <string name="action_download_list"
+            comment="action item: start to download all episodes from the download queue"
+            >Download queue</string>
+    <string name="action_add_download"
+            comment="action item: add episode to the end of the download queue"
+            >Add to download queue</string>
+    <string name="action_delete_download"
+            comment="action item: delete the episode's downloaded media file"
+            >Delete download</string>
+    <string name="action_stop_download"
+            comment="action item: suspend the currently running download"
+            >Stop download</string>
+    <string name="action_download_error"
+            comment="action item: red warning icon shown when the download for an episode failed. Opens a dialog with failure information when tapped."
+            >Download failed</string>
+    <string name="action_remove_from_download_list"
+            comment="action item: remove episode from download list"
+            >Remove from download list</string>
+    <string name="action_delete_recently_finished">Delete recently finished</string>
+
+    <string name="action_clear_list"
+            comment="action item: remove all episodes from the currently displayed list (either playlist or download queue)"
+            >Clear list</string>
+    <string name="action_clear_list_confirmation"
+            comment="content of confirmation dialog shown when user decided to clear the playlist or download queue"
+            >Do you really want to remove all episodes from the list?</string>
+
+    <string name="action_podcast_subscribe"
+            comment="action item: subscribe to the shown podcast"
+            >Subscribe</string>
+    <string name="action_podcast_unsubscribe"
+            comment="action item: unsubscribe from the shown podcast"
+            >Unsubscribe</string>
+    <string name="action_podcast_delete"
+            comment="action item: unsubscribes from a podcast and deletes all of it's episodes from the user's library"
+            >Delete podcast</string>
+    <string name="action_subscription_settings"
+            comment="action item: opens subscription specific settings"
+            >Subscription settings</string>
+    <string name="action_podcast_update_coverart">Update coverart</string>
+    <string name="action_sort_episodes_ascending"
+            comment="menu entry: sort episodes showing oldest first"
+            >Oldest episodes first</string>
+    <string name="action_sort_episodes_descending"
+            comment="menu entry: sort episodes showing newest first"
+            >Newest episodes first</string>
+    <string name="action_save_unfinished_episodes_for_later">Save unfinished for later</string>
+    <string name="action_show_all_podcast_episodes"
+            comment="action item: show all episodes of this podcast"
+            >Show all episodes of this podcast</string>
+    <string name="action_podcast_sync_error">Podcast sync error</string>
+    <string name="action_export_subscriptions"
+            comment="action item to export all subscriptions as OPML"
+            >Export OPML</string>
+
+    <string name="action_star"
+            comment="action item: mark the current episode as starred"
+            >Star</string>
+    <string name="action_unstar"
+            comment="action item: mark the current episode as unstarred"
+            >Unstar</string>
+
+    <string name="action_move_to_top">Move to top</string>
+    <string name="action_move_to_bottom">Move to bottom</string>
+
+    <!-- sharing -->
+    <string name="action_share_podcast"
+            comment="action item: share the affected podcast's URL"
+            >Share podcast</string>
+    <string name="action_share_episode"
+            comment="action item: share the affected episode's URL"
+            >Share episode</string>
+    <string name="action_open_episode_link"
+            comment="action item: open the episode's link in the browser"
+            >Open in browser</string>
+
+    <!-- GDrive -->
+    <string name="gdrive_connection_failed">Failed to connect to Google Drive</string>
+    <string name="gdrive_disabled">Disabled cloud sync</string>
+
+    <!-- synchronization -->
+    <string name="sync_started"
+            comment="toast informing the user that a sync has been started"
+            >Started synchronization</string>
+    <string name="syncing"
+            comment="message shown in podcast/episode together with load indicator, when a sync is in progress"
+            >synchronization in progress\nthis may take a while…</string>
+    <string name="sync_notification_title">uPod Synchronization</string>
+    <string name="sync_notification_sync">Synchronizing Google Drive</string>
+    <string name="sync_notification_push">Pushing local changes to Google Drive</string>
+    <string name="sync_notification_pull_settings">Updating settings</string>
+    <string name="sync_notification_pull_subscriptions">Updating subscriptions</string>
+    <string name="sync_notification_pull_podcast">Updating »%s«</string>
+    <string name="sync_notification_pull_playlist">Updating playlist</string>
+    <string name="sync_notification_delete_downloads">Deleting no longer required downloads</string>
+    <string name="sync_notification_updating_coverart">Updating coverart</string>
+
+    <plurals name="notify_new_episodes_title"
+             comment="title of the notification informing the user that new episodes are available. '%d' is replaced with the number of new episodes.">
+        <item quantity="one">One new Episode</item>
+        <item quantity="other">%d new Episodes</item>
+    </plurals>
+    <string name="notify_new_episodes"
+            comment="content of the notification informing the user that new episodes are available"
+            >New episodes are available</string>
+
+    <string name="sync_failed_title"
+            comment="title of notification shown when sync failed with unexpected error."
+            >uPod Sync failed with unexpected error</string>
+    <string name="sync_failed_content"
+            comment="content of notification shown when sync failed with unexpected error."
+            >Error: %s</string>
+
+    <string name="sync_conflict_title">Synchronization conflict</string>
+    <string name="sync_conflict_content">Tap to resolve the conflict</string>
+
+    <!-- podcast search -->
+    <string name="podcast_search_hint"
+            comment="hint text shown in light gray in the podcast search text field in the 'Find podcasts' section"
+            >Search podcasts</string>
+
+    <!-- open/add podcast -->
+    <string name="open_podcast_url_activity"
+            comment="shown in android's target app selection list, when a RSS URL is tapped e.g. in the browser. When the user selects the entry the podcast is opened in uPod."
+            >uPod podcast</string>
+    <string name="open_podcast_url_invalid"
+            comment="error text shown when an invalid URL is entered in the 'Add podcast' dialog"
+            >No valid URL has been specified.</string>
+    <string name="open_podcast_url_progress"
+            comment="wait dialog text shown while uPod fetches podcast information for a provided URL"
+            >Loading podcast information.</string>
+    <string name="open_podcast_url_failed"
+            comment="error text shown when a non-podcast URL has been tapped e.g. in the browser and the user has chosen to open it within uPod"
+            >The URL »%1$s« doesn\'t seem to reference a podcast (error: %2$s).</string>
+    <string name="open_podcast_failed">Unfortunately we were not able to load the podcast from »%1$s« (error: %2$s)</string>
+    <string name="open_podcast_url_in_browser">Open in browser</string>
+
+    <string name="add_podcast"
+            comment="has two purposes: \n1) action item to open a dialog that allows to add a podcast by entering an URL\n2) title of the opening dialog where the URL has to be entered"
+            >Add podcast by URL</string>
+    <string name="add_podcast_summary"
+            comment="help text shown in the 'Add podcast by URL' dialog. Keep the CDATA stuff"
+            ><![CDATA[Enter a podcast URL (RSS/Atom) below.
+        <p><b>Tip:</b> You can also add podcasts by
+        tapping a podcast URL in your browser or
+        importing subscriptions from an OPML file.</p>
+        Learn more on the <a href="http://upod.uservoice.com/knowledgebase/articles/270700-how-to-subscribe-to-new-podcasts-">support site</a>.]]></string>
+    <string name="add_podcast_url_hint"
+            comment="hint text shown in light gray in the URL input field in the 'Add podcast by URL' dialog"
+            >podcast URL (RSS/Atom)</string>
+    <string name="add_podcast_button"
+            comment="confirmation button of the 'Add podcast by URL' dialog to tell uPod to load the podcast information for the entered URL"
+            >Open podcast</string>
+
+    <!-- delete podcast -->
+    <plurals name="confirm_delete_podcast">
+        <item quantity="one">Do you really want to delete the podcast and all of it\'s episodes from your library?</item>
+        <item quantity="other">Do you really want to delete the selected podcasts and all of their episodes from your library?</item>
+    </plurals>
+
+    <!-- opml import -->
+    <string name="opml_import"
+            comment="title of the OPML import dialogs"
+            >uPod OPML import</string>
+    <string name="opml_import_start"
+            comment="OPML import confirmation. '%s' will be replaced by the path of the OPML file"
+            >Do you want to add the subscriptions from the OPML at "%s"?</string>
+    <string name="opml_import_progress"
+            comment="wait dialog text shown while the OPML is processed"
+            >Verifying your OPML. This may take a moment.</string>
+    <string name="opml_import_failed"
+            comment="title of dialog shown when importing the OPML has failed"
+            >OPML import failed</string>
+    <string name="opml_file_not_found_error"
+            comment="content of dialog shown when importing the OPML has failed due to a file access issue"
+            >Cannot access the OPML file. Maybe a permission issue?</string>
+    <string name="opml_parse_error"
+            comment="content of dialog shown when importing the OPML has failed to due to a OPML parsing error. '%s' will be replaced by a detailed error description in English."
+            >Your OPML is invalid: %s</string>
+    <string name="generic_opml_error"
+            comment="content of dialog shown when importing the OPML has failed and we cannot better isolate the cause."
+            >An unexpected error occurred: %s</string>
+
+    <!-- downloading -->
+    <string name="download_preparing"
+            comment="notification content displayed when a download starts"
+            >preparing download…</string>
+    <string name="download_progress"
+            comment="notification content of a running download where we know the size of the media file. The placeholders have the following meanings:\n%4$s: remaining time\n%1$,.1f: already downloaded mega bytes\n%2$,.1f: overall media file size in mega bytes\n%3$,.2f: download speed in kilo bytes per second"
+            >%4$s remaining — %1$,.1f of %2$,.1f MB at %3$,.2f kB/s</string>
+    <string name="download_progress_indeterminate"
+            comment="notification content of a running download where we do *not* know the size of the media file. The placeholders have the following meanings:\n%1$,.1f: already downloaded mega bytes\n%2$,.2f: download speed in kilo bytes per second"
+            >%1$,.1f MB at %2$,.2f kB/s</string>
+    <string name="download_error_title"
+            comment="dialog title"
+            >Download failed</string>
+    <string name="download_error"
+            comment="dialog content with the following placeholders\n- %1$d: Number of attempts made to download the file\n- %2$s: URL of the media file\n- %3$s: Last error text in English language"
+            >Made %1$d attempt(s) to download the episode from\n\n\t%2$s\n\nLatest error: %3$s</string>
+
+    <string name="download_error_not_enough_space">Low space on storage</string>
+    <string name="download_error_not_enough_space_details">Download stopped due to low space on storage</string>
+
+    <!-- playback -->
+    <string name="action_media_stop"
+            comment="playback bar/screen: stop playback"
+            >Stop</string>
+    <string name="action_media_play"
+            comment="playback bar/screen: resume playback"
+            >Play</string>
+    <string name="action_media_pause"
+            comment="playback bar/screen: pause playback"
+            >Pause</string>
+    <string name="action_media_skip"
+            comment="playback bar/screen: skip current episode and mark as finished"
+            >Skip</string>
+    <string name="buffering"
+            comment="playback notification when streaming has started"
+            >Buffering…</string>
+    <string name="playing"
+            comment="playback notification; placeholders:\n%1$s: remaining playback time for current episode\n%2$s: overall duration of current episode"
+            >%1$s — Playing</string>
+    <string name="paused"
+            comment="paused notification; placeholders:\n%1$s: remaining playback time for current episode\n%2$s: overall duration of current episode"
+            >%1$s — Paused</string>
+
+    <string name="playback_error"
+            comment="playback error notification/dialog title"
+            >Playback failed</string>
+    <string name="playback_error_content"
+            comment="playback error notification content"
+            >Playback failed! Tap for further options.</string>
+    <string name="playback_error_storage_not_available"
+            comment="playback error details"
+            >Cannot start playback because the media storage isn\'t available. Did you remove your SD card or is your storage currently shared via USB?</string>
+    <string name="playback_error_file_does_not_exist"
+            comment="playback error details"
+            >Cannot start playback because the media file doesn\'t exist. Please download the episode again.</string>
+    <string name="playback_error_unsupported_format"
+            comment="playback error details"
+            >Seems we don\'t support this episode\'s media format. You can try to playback using another app.</string>
+    <string name="playback_error_remote"
+            comment="playback error details"
+            >An error occurred during remote playback. Try again later.</string>
+    <string name="playback_error_unknown"
+            comment="playback error details"
+            >An unknown playback error occurred. You can try to playback using another app.</string>
+    <string name="play_with"
+            comment="dialog button of playback error dialog to playback episode with another player"
+            >Play with…</string>
+
+    <string name="playlist_next"
+            comment="title of the 'Next on playlist' bar at the bottom of the playback screen"
+            >Up next</string>
+    <string name="playlist_next_empty"
+            comment="content of the 'Next on playlist' bar at the bottom of the playback screen if there are no further episodes on the playlist"
+            >No further episodes on playlist</string>
+
+    <string name="apply_to_podcast">for all episodes of this podcast</string>
+
+    <string name="playback_speed">Playback speed</string>
+    <string name="volume_gain">Volume gain</string>
+
+    <string name="audio_fx_not_available">Audio effects not available</string>
+    <string name="audio_fx_not_now">Audio effects are not available at the moment.</string>
+    <string name="audio_fx_not_for_current_player">You need to enable the Sonic audio player in the playback settings to apply audio effects. The Sonic player is experimental and may cause higher battery drain.\n\nDo you want to activate the Sonic player as uPod\'s default player now?</string>
+
+    <!-- chapters -->
+    <string name="chapters">Chapters</string>
+    <string name="action_show_chapters">Show chapters</string>
+    <string name="action_chapter_next">Next chapter</string>
+    <string name="action_chapter_back">Previous chapter</string>
+    <string name="action_chapter_image">Show chapter image</string>
+    <string name="action_chapter_link">Open chapter link</string>
+
+    <string name="chapter_image_load_error">Failed to load the image.</string>
+
+    <string name="chapter_premium_hint">Upgrade to the Premium version or start the trial period (Settings &gt; License) to see the full chapter list here and navigate to chapters using the user interface or your headset controls.</string>
+
+    <!-- sleep timer -->
+    <string name="sleep_timer">Sleep timer</string>
+
+    <string name="sleep_timer_action_off">Sleep timer off</string>
+    <string name="sleep_timer_action_chapter">Stop at end of chapter</string>
+    <string name="sleep_timer_action_episode">Stop at end of episode</string>
+    <string name="sleep_timer_action_timer">Sleep timer</string>
+
+    <string name="sleep_timer_mode_chapter">Chapter</string>
+    <string name="sleep_timer_mode_episode">Episode</string>
+
+    <!-- licensing -->
+    <string name="premium_feature">Premium feature</string>
+    <string name="premium_feature_details">You need the premium version to use this feature.</string>
+    <string name="premium_feature_details_with_trial_option">You need to purchase the premium version to use this feature or you can start the trial period to test all premium features for 7 days.</string>
+
+    <string name="checking_license"
+            comment="wait dialog text shown when tapping the license status entry in the license settings while the license is checked"
+            >Checking license…</string>
+
+    <string name="trial_start_title">Start trial period</string>
+    <string name="trial_start_details">During the trial period you can test all premium features for free. Do you want to start your 7 day trial now?</string>
+
+    <string name="trial_started">Trial period started</string>
+    <string name="trial_expired"
+            comment="dialog/notification title shown when the trial period has expired"
+            >Trial period expired</string>
+    <string name="trial_expired_dialog"
+            comment="content of the 'Trial period expired' dialog"
+            >Your premium trial period has expired. You can go on using uPod without the premium features or purchase the premium version.</string>
+
+    <string name="trial_period_remaining"
+            comment="toast showing the remaining trial period"
+            >%d day(s) left for premium trial period</string>
+    <string name="trial_period_expires_soon"
+            comment="toast showing the remaining trial period when it expires within the next 24 hours"
+            >Your premium trial will expire within the next %d hour(s)!</string>
+
+    <string name="license_purchase"
+            comment="button of the 'Tiral period expired' dialog that opens the uPod license app in the Google play app"
+            >Premium version…</string>
+    <string name="action_start_trial">Start trial</string>
+    <string name="disabled_premium_preferences">Disabled premium settings</string>
+
+    <!-- support -->
+    <string name="collecting_diagnostics"
+            comment="wait dialog content shown when using the 'Send diagnostics' action from the support settings"
+            >Collecting diagnostics…</string>
+    <string name="send_email"
+            comment="title of android's mail app picker shown when sending diagnostics"
+            >Send e-mail</string>
+
+    <!-- storage -->
+    <string name="storage_internal"
+            comment="label for internal storage as shown in the storage settings"
+            >Internal storage</string>
+    <string name="storage_external"
+            comment="label for external storage as shown in the storage settings"
+            >External storage</string>
+    <string name="storage_external_secondary"
+            comment="label for secondary external storage (SD card in most cases if available) as shown in the storage settings"
+            >Secondary external storage</string>
+
+    <string name="storage_not_readable"
+            comment="dialog/notification error message when the selected storage (%s placeholder) is not readable"
+            >%s isn\'t readable</string>
+    <string name="storage_not_writable"
+            comment="dialog/notification error message when the selected storage (%s placeholder) is not writable"
+            >%s isn\'t writable</string>
+
+    <!-- ================================================================== -->
+    <!-- tips -->
+
+    <string name="tip_category_selection"
+            comment="showcase tip title (showcase tips are those which highlight a user interface control after starting uPod for the first time)"
+            >Podcast Categories</string>
+    <string name="tip_category_selection_details"
+            comment="showcase tip description (showcase tips are those which highlight a user interface control after starting uPod for the first time)"
+            >Select a category to narrow down the list of popular podcasts.</string>
+
+    <string name="tip_view_mode"
+            comment="showcase tip description (showcase tips are those which highlight a user interface control after starting uPod for the first time)"
+            >Episode View Mode</string>
+    <string name="tip_view_mode_details"
+            comment="showcase tip description (showcase tips are those which highlight a user interface control after starting uPod for the first time)"
+            >Select your preferred episode list view mode.</string>
+
+    <string name="tip_add_podcast"
+            comment="showcase tip title (showcase tips are those which highlight a user interface control after starting uPod for the first time)"
+            >Add Podcast</string>
+    <string name="tip_add_podcast_details"
+            comment="showcase tip description (showcase tips are those which highlight a user interface control after starting uPod for the first time)"
+            >Missing your favorite podcast? Add any podcast you want.</string>
+
+    <string name="tip_subscribe_podcast">Subscribe to Podcasts</string>
+    <string name="tip_subscribe_podcast_details">Subscribe to this podcast to get all upcoming episodes delivered to your »New« section.</string>
+
+    <string name="tip_new_title">New Episodes</string>
+    <string name="tip_new_details">New episodes for your subscriptions go here. Save them for later ([img src=ic_action_mark_read_light/]) or mark them as finished ([img src=ic_action_finished_light/]) if you are not interested in them.</string>
+
+    <string name="tip_finished_title">Finished Episodes</string>
+    <string name="tip_finished_details">Finished episodes will be deleted automatically after 24 hours. Star episodes to keep them.</string>
+
+    <string name="tip_automatic_download_queue_title">Download Queue</string>
+    <string name="tip_automatic_download_queue_details">Which episodes should be added automatically to the download queue?</string>
+    <string name="tip_automatic_download_queue_option_manual">None, I add episodes manually only</string>
+    <string name="tip_automatic_download_queue_option_playlist">All episodes on my playlist</string>
+    <string name="tip_automatic_download_queue_option_later">All episodes saved for later</string>
+    <string name="tip_automatic_download_queue_option_new_and_later">New and episodes saved for later</string>
+
+    <string name="tip_automatic_download_start_title">Automatic Download</string>
+    <string name="tip_automatic_download_start_details">Upgrade to the premium version to automatically start the download as soon as a Wi-FI connection becomes available.</string>
+
+    <string name="rate_request_title">Rate uPod</string>
+    <string name="rate_request_details">Do you like uPod? Great, then please take a minute to rate uPod and tell others how much you like it.</string>
+    <string name="action_rate">Rate</string>
+
+    <string name="purchase_request_title">Go Premium</string>
+    <string name="purchase_request_details">Upgrade to the premium version and get additional features like automatic downloads, cross device synchronization and Chromecast support. With your payment you support me and the further development of uPod.</string>
+    <string name="purchase_request_more">Tell me more</string>
+
+    <string name="sponsor_request_dismiss_temporary">Later</string>
+    <string name="sponsor_request_dismiss_permanent">No, thanks</string>
+
+    <string name="share_upod_title">Tell your friends about uPod</string>
+    <string name="share_upod_subject">Checkout uPod — A great Podcast Player for Android</string>
+    <string name="share_upod_body">Checkout uPod — A great Podcast Player for Android: %s</string>
+
+    <string name="tip_upgrade4_too_much_new_title">Important Change</string>
+    <string name="tip_upgrade4_too_much_new_details">In uPod 4 you no longer delete episodes, but mark them as finished instead. The finished state is then tracked by uPod. On the first sync this change may result in lots of episodes being marked as new, though you deleted them in the past. Use the new »Mark finished from here« action to quickly get rid of them.</string>
+
+    <!-- ================================================================== -->
+    <!-- wizard -->
+
+    <string name="wizard_welcome">Welcome to uPod</string>
+    <string name="wizard_welcome_introduction">What\'s your situation?</string>
+    <string name="wizard_welcome_option_new_user">I am new to uPod</string>
+    <string name="wizard_welcome_option_existing_user">I have used uPod before</string>
+
+    <string name="wizard_new_user">Get started</string>
+    <string name="wizard_new_user_introduction"><![CDATA[
+        <p>uPod will show you some tips the first time you use a feature.</p>
+        <p>Go ahead and grab your first podcast from the catalog.</p>
+    ]]></string>
+
+    <string name="wizard_cloud_sync">Cloud Sync</string>
+    <string name="wizard_cloud_sync_introduction">Did you use uPod\'s cloud sync and want to restore your subscriptions and playback positions from it?</string>
+    <string name="wizard_cloud_sync_yes">Yes (requires premium license)</string>
+    <string name="wizard_cloud_sync_no">No</string>
+    <string name="wizard_cloud_sync_license_required">You need the uPod premium license to use the cloud sync. Install it and come back again.</string>
+
+    <string name="wizard_recurring_user">Welcome back</string>
+    <string name="wizard_recurring_user_introduction">You know what to do: Go ahead and grab your first podcast from the catalog.</string>
+
+    <string name="wizard_account">Google Drive</string>
+    <string name="wizard_account_introduction">Connect uPod to Google Drive to restore your data.</string>
+    <string name="wizard_account_required">You need to connect uPod to Google Drive to restore your podcasts from the cloud.</string>
+
+    <string name="wizard_single_choice_required">Please choose an option.</string>
+
+    <string name="wizard_update_gdrive">Google Drive</string>
+    <string name="wizard_update_gdrive_introduction">Starting with this version uPod uses Google Drive to synchronize your subscriptions, playlist and more.\n\nPlease update all your devices to the latest uPod version to keep them in sync.\n\n(Skip sign in to disable cloud sync)</string>
+
+    <string name="wizard_sync_conflict">Synchronization Conflict</string>
+    <string name="wizard_sync_conflict_introduction">Your device and server state are out of sync. How do you want to proceed?</string>
+    <string name="wizard_sync_conflict_use_server_state">Use server state (dismiss local changes)</string>
+    <string name="wizard_sync_conflict_use_device_state">Use device state (dismiss server state)</string>
+
+    <string name="wizard_back">Back</string>
+    <string name="wizard_next">Next</string>
+    <string name="wizard_start">Start</string>
+
+    <!-- ================================================================== -->
+    <!-- permission requests -->
+    <string name="permission_request_external_storage">External storage permission</string>
+    <string name="permission_request_external_storage_details">To store episodes uPod requires access to the external storage of your device.\n\nIf you do not grant the permission uPod will have to store episodes in the internal storage.</string>
+
+    <string name="permission_request_external_storage_rejected">You have rejected the permission to access your device\'s external storage.\n\nShould uPod store episodes on your internal storage?</string>
+
+    <!-- ================================================================== -->
+    <!-- generic messages -->
+    <string name="loading"
+            comment="generic message shown in wait dialog"
+            >Loading…</string>
+    <string name="saving"
+            comment="generic message shown in wait dialog"
+            >Saving changes…</string>
+    <string name="wait_please"
+            comment="generic message shown in wait dialog"
+            >Please wait…</string>
+    <string name="no_items"
+            comment="shown as placeholder text in empty lists/grids"
+            >no items</string>
+    <string name="contact_support"
+            comment="dialog button to contact the uPod support directory from a failed OPML import"
+            >Contact support</string>
+    <string name="not_applicable">not applicable</string>
+
+    <!-- ================================================================== -->
+    <!-- errors -->
+    <string name="connection_error"
+            comment="generic error message"
+            >Network connection failed</string>
+
+    <string name="app_version_expired_error"
+            comment="title of notification shown when the uPod version is no longer compatible with the uPod server"
+            >Your uPod version is outdated</string>
+    <string name="app_version_expired_error_details"
+            comment="content of notification shown when the uPod version is no longer compatible with the uPod server"
+            >Tap here to update to the latest version</string>
+
+    <string name="http_status_202"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >202: Accepted</string>
+    <string name="http_status_502"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >502: Bad Gateway</string>
+    <string name="http_status_405"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >405: Bad Method</string>
+    <string name="http_status_400"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >400: Bad Request</string>
+    <string name="http_status_408"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >408: Client Timeout</string>
+    <string name="http_status_409"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >409: Conflict</string>
+    <string name="http_status_201"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >201: Created</string>
+    <string name="http_status_413"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >413: Entity too large</string>
+    <string name="http_status_403"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >403: Forbidden</string>
+    <string name="http_status_504"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >504: Gateway timeout</string>
+    <string name="http_status_410"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >410: Gone</string>
+    <string name="http_status_411"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >411: Length required</string>
+    <string name="http_status_301"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >301: Length required</string>
+    <string name="http_status_302"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >302: Moved temporarily</string>
+    <string name="http_status_300"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >300: Multiple choices</string>
+    <string name="http_status_204"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >204: No content</string>
+    <string name="http_status_406"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >406: Not acceptable</string>
+    <string name="http_status_203"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >203: Not authoritative</string>
+    <string name="http_status_404"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >404: Not found</string>
+    <string name="http_status_501"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >501: Not implemented</string>
+    <string name="http_status_304"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >304: Not modified</string>
+    <string name="http_status_200"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >200: OK</string>
+    <string name="http_status_206"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >206: Partial</string>
+    <string name="http_status_402"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >402: Payment required</string>
+    <string name="http_status_412"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >412: Precondition failed</string>
+    <string name="http_status_407"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >407: Proxy authentication required</string>
+    <string name="http_status_414"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >414: Request too long</string>
+    <string name="http_status_205"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >205: Reset</string>
+    <string name="http_status_303"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >303: See other</string>
+    <string name="http_status_500"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >500: Internal error</string>
+    <string name="http_status_305"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >305: Use proxy</string>
+    <string name="http_status_401"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >401: Unauthorized</string>
+    <string name="http_status_415"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >415: Unsupported type</string>
+    <string name="http_status_503"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >503: Unavailable</string>
+    <string name="http_status_505"
+            comment="translation optional -- HTTP status code (http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)"
+            >505: Version not supported</string>
+    <string name="http_status_generic"
+            comment="generic HTTP status code -- %d will be replaced with the actual code"
+            >%d: Generic HTTP error</string>
+
+    <!-- ================================================================== -->
+    <!-- preferences -->
+    <string name="pref_title"
+            comment="title of the uPod settings screen"
+            >Settings</string>
+
+    <!-- ui -->
+    <string name="pref_category_ui"
+            comment="top level settings category"
+            >User Interface &amp; Workflow</string>
+
+    <!-- workflow -->
+    <string name="pref_category_workflow"
+            comment="setting category"
+            >Workflow</string>
+    <string name="pref_auto_add_to_playlist"
+            comment="setting title"
+        >Auto add to playlist</string>
+    <string name="pref_auto_add_to_playlist_summary"
+            comment="setting summary"
+        >Automatically add all new episodes to the end of your playlist</string>
+
+    <string name="pref_skip_new"
+            comment="setting title"
+            >Save all for later</string>
+    <string name="pref_skip_new_summary"
+            comment="setting summary"
+            >Automatically mark all new episodes as not-new and save them for later</string>
+
+    <string name="pref_hide_new_in_library"
+            comment="setting title"
+            >Inbox mode</string>
+    <string name="pref_hide_new_in_library_summary"
+            comment="setting summary"
+            >Show new episodes only in the »New« section and on the playlist and download queue</string>
+
+    <string name="pref_skip_new_confirmation_title"
+            comment="title of confirmation dialog shown, when the user enables the 'Mark all as not-new' option"
+            >Save all for later</string>
+    <string name="pref_skip_new_confirmation"
+            comment="content of confirmation dialog shown, when the user enables the 'Mark all as not-new' option"
+            >All current new episodes will be marked as not-new now and will be saved for later. Do you want to continue?</string>
+
+    <string name="pref_notify_new_episodes"
+            comment="setting title"
+            >Notify on new episodes</string>
+    <string name="pref_notify_new_episodes_summary"
+            comment="setting summary"
+            >Bring up a status bar notification if there are new episodes for your subscriptions</string>
+
+    <!-- filters -->
+    <string name="pref_category_filters"
+            comment="setting category defining which filters to show in navigation view"
+            >Sections in Navigation Drawer</string>
+
+    <string name="pref_filter_media_type"
+            comment="setting title"
+            >Show »Audio« &amp; »Video« section</string>
+    <string name="pref_filter_media_type_summary"
+            comment="setting summary"
+            >Shows the »Audio« and »Video« section in the navigation drawer</string>
+
+    <string name="pref_filter_downloaded"
+            comment="setting title"
+            >Show »Downloaded« section</string>
+    <string name="pref_filter_downloaded_summary"
+            comment="setting summary"
+            >Shows the »Downloaded« section in the navigation drawer</string>
+
+    <!-- primary action -->
+    <string name="pref_category_primary_action"
+            comment="setting category for defining the primary action for episodes"
+            >Primary Episode Action</string>
+
+    <string name="pref_primary_download_action"
+            comment="setting title"
+            >Not downloaded episodes</string>
+
+    <string name="pref_primary_download_action_selection_title"
+            comment="title of primary download action picker dialog"
+            >Primary action for not downloaded episodes</string>
+    <string name="pref_primary_download_action_entry_queue"
+            comment="selection option for primary action for not downloaded episodes"
+            >Add to download queue</string>
+    <string name="pref_primary_download_action_entry_download"
+            comment="selection option for primary action for not downloaded episodes"
+            >Download</string>
+    <string name="pref_primary_download_action_entry_playlist"
+            comment="selection option for primary action for not downloaded episodes"
+            >Add to playlist</string>
+    <string name="pref_primary_download_action_entry_stream"
+            comment="selection option for primary action for not downloaded episodes"
+            >Stream</string>
+
+    <string name="pref_primary_download_action_summary_queue"
+            comment="summary for primary action for not downloaded episodes"
+            >Show »Add to download queue« button as primary action for not downloaded episodes</string>
+    <string name="pref_primary_download_action_summary_download"
+            comment="summary for primary action for not downloaded episodes"
+            >Show download button as primary action for not downloaded episodes</string>
+    <string name="pref_primary_download_action_summary_playlist"
+            comment="summary for primary action for not downloaded episodes"
+            >Show »Add to playlist«  button as primary action for not downloaded episodes</string>
+    <string name="pref_primary_download_action_summary_stream"
+            comment="summary for primary action for not downloaded episodes"
+            >Show stream button as primary action for not downloaded episodes</string>
+
+    <string name="pref_add_as_primary_new_action"
+            comment="setting title"
+            >New episodes</string>
+    <string name="pref_add_as_primary_new_action_selection_title"
+            comment="title of option picker for primary action for new episodes"
+            >Show »Save for later« action for new episodes</string>
+    <string name="pref_add_as_primary_new_action_entry_never"
+            comment="selection option: show same primary action as for not-new episodes"
+            >Never</string>
+    <string name="pref_add_as_primary_new_action_entry_not_downloaded"
+            comment="selection option: show add action for new, not-downloaded episodes"
+            >When not downloaded</string>
+    <string name="pref_add_as_primary_new_action_entry_always"
+            comment="selection option: show add action for all new episodes"
+            >Always</string>
+    <string name="pref_add_as_primary_new_action_summary_never"
+            comment="setting summary: show same primary action as for not-new episodes"
+            >Show same primary action as for not-new episodes</string>
+    <string name="pref_add_as_primary_new_action_summary_not_downloaded"
+            comment="selection option: show add action for new, not-downloaded episodes"
+            >Show »Save for later« button for new, not downloaded episodes</string>
+    <string name="pref_add_as_primary_new_action_summary_always"
+            comment="selection option: show add action for all new episodes"
+            >Show »Save for later« button for all new episodes</string>
+
+    <!-- podcast grid -->
+    <string name="pref_category_podcast_grid">Podcast Grid</string>
+
+    <string name="pref_podcast_grid_type"
+            comment="title of setting specifying how to display the podcast grid"
+        >Podcast grid</string>
+    <string name="pref_podcast_grid_type_selection_title"
+            comment="title of podcast list display type picker dialog"
+        >Display podcasts as</string>
+
+    <string name="pref_podcast_grid_type_entry_large"
+            comment="selection option for 'Podcast List > For portrait/landscape orientation' setting"
+        >Large image and two-line title</string>
+    <string name="pref_podcast_grid_type_entry_tiny"
+            comment="selection option for 'Podcast List > For portrait/landscape orientation' setting"
+        >Small image and one-line title</string>
+
+    <string name="pref_podcast_grid_type_summary_large"
+            comment="summary for 'Podcast grid' setting large grid"
+        >Display podcasts with large podcast image and two-line title</string>
+    <string name="pref_podcast_grid_type_summary_tiny"
+            comment="summary for 'Podcast grid' setting tiny grid"
+        >Display podcasts with small podcast image and one-line title</string>
+
+    <string name="pref_podcast_grid_show_title">Show podcast title</string>
+    <string name="pref_podcast_grid_show_title_summary">Show podcast title below image</string>
+
+    <!-- playback -->
+    <string name="pref_category_playback"
+            comment="top level settings category"
+            >Playback</string>
+
+    <string name="pref_playback_notification_buttons"
+            comment="setting title"
+            >Playback notification buttons</string>
+
+    <string name="pref_playback_notification_buttons_entry_stop_play_skip"
+            comment="selection option for 'Playback notification buttons' setting"
+            >Stop, play, skip</string>
+    <string name="pref_playback_notification_buttons_entry_stop_play_fastforward"
+            comment="selection option for 'Playback notification buttons' setting"
+            >Stop, play, fast forward</string>
+    <string name="pref_playback_notification_buttons_entry_rewind_play_fastforward"
+            comment="selection option for 'Playback notification buttons' setting"
+            >Rewind, play, fast forward</string>
+
+    <string name="pref_playback_notification_buttons_summary_stop_play_skip"
+            comment="summary for 'Playback notification buttons' setting shown when 'Stop, play, skip' option is selected"
+            >Show stop, play and skip action in playback notification</string>
+    <string name="pref_playback_notification_buttons_summary_stop_play_fastforward"
+            comment="summary for 'Playback notification buttons' setting shown when 'Stop, play, fast forward' option is selected"
+            >Show stop, play and fast forward action in playback notification</string>
+    <string name="pref_playback_notification_buttons_summary_rewind_play_fastforward"
+            comment="summary for 'Playback notification buttons' setting shown when 'rewind, play, fast forward' option is selected"
+            >Show rewind, play and fast forward action in playback notification</string>
+
+    <string name="pref_fast_forward_seconds"
+            comment="setting title"
+            >Fast forward seconds</string>
+    <string name="pref_fast_forward_seconds_summary"
+            comment="setting summary; %d will be replaced by number of seconds"
+            >Fast forward skips %d seconds</string>
+
+    <string name="pref_rewind_seconds"
+            comment="setting title"
+            >Rewind seconds</string>
+    <string name="pref_rewind_seconds_summary"
+            comment="setting summary; %d will be replaced by number of seconds"
+            >Rewind skips %d seconds</string>
+
+    <string name="seconds">seconds</string>
+
+    <string name="pref_media_position_format"
+            comment="setting title"
+            >Media position format</string>
+
+    <string name="pref_media_position_format_entry_current_and_duration"
+            comment="selection option for 'Media position format' setting"
+            >Position / duration</string>
+    <string name="pref_media_position_format_entry_remaining_and_duration"
+            comment="selection option for 'Media position format' setting"
+            >Remaining / duration</string>
+    <string name="pref_media_position_format_entry_current_and_remaining"
+            comment="selection option for 'Media position format' setting"
+            >Position / remaining</string>
+
+    <string name="pref_media_position_format_summary_current_and_duration"
+            comment="summary for 'Media position format' setting shown when 'Position / duration' option is selected"
+            >Display current playback position and episode duration</string>
+    <string name="pref_media_position_format_summary_remaining_and_duration"
+            comment="summary for 'Media position format' setting shown when 'remaining / duration' option is selected"
+            >Display remaining playback time and episode duration</string>
+    <string name="pref_media_position_format_summary_current_and_remaining"
+            comment="summary for 'Media position format' setting shown when 'Position / remaining' option is selected"
+            >Display current playback position and remaining time</string>
+
+    <string name="pref_play_not_downloaded_episodes"
+            comment="setting title"
+            >Not downloaded episodes</string>
+
+    <string name="pref_play_not_downloaded_episodes_skip"
+            comment="selection option for skip setting"
+            >Skip</string>
+    <string name="pref_play_not_downloaded_episodes_stream_on_wifi"
+            comment="selection option for skip setting"
+            >Stream when on Wi-FI</string>
+    <string name="pref_play_not_downloaded_episodes_stream"
+            comment="selection option for skip setting"
+            >Stream</string>
+
+    <string name="pref_play_not_downloaded_episodes_summary_skip"
+            comment="selection option for skip setting"
+            >Skip not downloaded episodes on the play list</string>
+    <string name="pref_play_not_downloaded_episodes_summary_stream_on_wifi"
+            comment="selection option for skip setting"
+            >Stream not downloaded episodes when connected via Wi-FI, skip otherwise</string>
+    <string name="pref_play_not_downloaded_episodes_summary_stream"
+            comment="selection option for skip setting"
+            >Stream not downloaded episodes on the play list</string>
+
+    <string name="pref_category_playback_view"
+            comment="setting category"
+            >Playback View</string>
+    <string name="pref_auto_show_playback_view"
+            comment="setting title"
+            >Automatically show playback view</string>
+
+    <string name="pref_auto_show_playback_view_entry_never"
+            comment="selection option for 'Automatically show playback view' setting"
+            >Never</string>
+    <string name="pref_auto_show_playback_view_entry_video"
+            comment="selection option for 'Automatically show playback view' setting"
+            >When you start a video</string>
+    <string name="pref_auto_show_playback_view_entry_always"
+            comment="selection option for 'Automatically show playback view' setting"
+            >When you start any playback</string>
+
+    <string name="pref_auto_show_playback_view_summary_never"
+            comment="summary for 'Automatically show playback view' setting shown when 'Never' option is selected"
+            >Never open playback view automatically. Tap on playback bar to open playback view</string>
+    <string name="pref_auto_show_playback_view_summary_video"
+            comment="summary for 'Automatically show playback view' setting shown when 'When you start a video' option is selected"
+            >Open playback view when you start a video playback</string>
+    <string name="pref_auto_show_playback_view_summary_always"
+            comment="summary for 'Automatically show playback view' setting shown when 'When you start any playback' option is selected"
+            >Open playback view when you start any playback</string>
+
+    <string name="pref_enforce_landscape_video"
+            comment="setting title"
+            >Enforce landscape video</string>
+    <string name="pref_enforce_landscape_video_summary"
+            comment="setting summary"
+            >Always switch to landscape (horizontal) orientation for video playback</string>
+
+    <string name="pref_category_headset"
+            comment="setting category"
+            >Headset Control</string>
+    <string name="pref_swap_jump_wind_buttons"
+            comment="setting title"
+            >Swap navigation/wind buttons</string>
+    <string name="pref_swap_jump_wind_buttons_summary"
+            comment="setting summary"
+            >Remote navigation buttons (skip/back) perform winding (fast forward/rewind) and vice versa</string>
+
+    <string name="pref_double_click_ff_to_skip"
+            comment="setting title"
+            >Double click for skip/back</string>
+    <string name="pref_double_click_ff_to_skip_summary"
+            comment="setting summary"
+            >Double click the fast forward/rewind button to perform the skip/back operation</string>
+
+    <string name="pref_skip_back_chapter">Skip/Back chapter if available</string>
+    <string name="pref_skip_back_chapter_summary">If the current episode contains chapters, skip/back one chapter instead of the whole episode</string>
+
+    <string name="pref_pause_when_becoming_noisy"
+            comment="setting title"
+            >Pause when becoming noisy</string>
+    <string name="pref_pause_when_becoming_noisy_summary"
+            comment="setting summary"
+            >Pause playback when disconnecting the headset</string>
+
+    <string name="pref_category_media_player">Media Player</string>
+    <string name="pref_audio_player">Audio player</string>
+    <string-array name="pref_audio_player_summaries">
+        <item>Use Android\'s integrated media player – more reliable but no speed control and audio boost</item>
+        <item>Use Sonic player – experimental and may cause higher battery drain, but provides speed control and audio boost</item>
+    </string-array>
+    <string-array name="pref_audio_player_entries">
+        <item>Android player</item>
+        <item>Sonic player (experimental)</item>
+    </string-array>
+
+    <!-- sync -->
+    <string name="pref_category_sync"
+            comment="top level settings category"
+            >Synchronization</string>
+
+    <string name="pref_sync_notification">Sync notification</string>
+    <string name="pref_sync_notification_summary">Show sync progress notification in Android\'s status bar while syncing</string>
+
+    <string name="pref_category_sync_automatic">Automatic Synchronization</string>
+
+    <string name="pref_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_summaries">
+        <item>No periodical sync</item>
+        <item>Synchronize every half hour</item>
+        <item>Synchronize every hour</item>
+        <item>Synchronize every 2 hours</item>
+        <item>Synchronize every 3 hours</item>
+        <item>Synchronize every 4 hours</item>
+        <item>Synchronize every 6 hours</item>
+        <item>Synchronize every 8 hours</item>
+        <item>Synchronize every 12 hours</item>
+        <item>Synchronize every 24 hours</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_entries">
+        <item>no periodical sync</item>
+        <item>every half hour</item>
+        <item>every hour</item>
+        <item>every 2 hours</item>
+        <item>every 3 hours</item>
+        <item>every 4 hours</item>
+        <item>every 6 hours</item>
+        <item>every 8 hours</item>
+        <item>every 12 hours</item>
+        <item>every 24 hours</item>
+    </string-array>
+
+    <string name="pref_sync_time_1">Sync time 1</string>
+    <string name="pref_sync_time_2">Sync time 2</string>
+    <string name="pref_sync_time_summary">Synchronize every day at:</string>
+
+    <string name="pref_sync_only_on_wifi"
+            comment="setting title"
+            >Sync only on Wi-FI</string>
+    <string name="pref_sync_only_on_wifi_summary"
+            comment="setting summary"
+            >Only sync automatically when connected via Wi-FI. Missed syncs will be catched up as soon as Wi-FI is available.</string>
+
+    <string name="pref_sync_time_info">Time info</string>
+    <string name="pref_sync_time_info_summary">Last sync: %1$s\nNext sync: %2$s</string>
+
+    <string name="pref_category_sync_cloud">Cloud Synchronization</string>
+
+    <string name="pref_sync_cloud">Cloud sync</string>
+    <string name="pref_sync_cloud_summary">Backup your playlist, playback positions and episode states to Google Drive and sync them across all your uPod devices</string>
+
+    <string name="pref_fix_gdrive_app_folder">Fix Google Drive for sync</string>
+    <string name="pref_fix_gdrive_app_folder_summary">Make sync work again after you\'ve deleted uPod\'s app data in Google Drive</string>
+    <string name="pref_fix_gdrive_app_folder_succeeded">Sync is working again</string>
+    <string name="pref_fix_gdrive_app_folder_failed">Fixing the sync failed. Contact support.</string>
+
+    <!-- download -->
+    <string name="pref_category_download"
+            comment="top level settings category"
+            >Download</string>
+    <string name="pref_auto_add_download_strategy"
+            comment="setting title"
+            >Add episodes to download queue</string>
+    <string-array name="pref_auto_add_download_strategy_entries">
+        <item>Add episodes only manually</item>
+        <item>All episodes from the playlist</item>
+        <item>All episodes saved for later</item>
+        <item>New and episodes saved for later</item>
+    </string-array>
+    <string-array name="pref_auto_add_download_strategy_summaries">
+        <item>Add episodes only manually to the download queue</item>
+        <item>Automatically add all episodes from the playlist to the download queue</item>
+        <item>Automatically add all episodes saved for later to the download queue</item>
+        <item>Automatically add all new episodes and those saved for later to the download queue</item>
+    </string-array>
+
+    <string name="pref_auto_start_download_strategy"
+            comment="setting title"
+            >Automatic download</string>
+
+    <string name="pref_auto_start_download_strategy_entry_manual"
+            comment="selection option for 'Automatic download' setting"
+            >No automatic download</string>
+    <string name="pref_auto_start_download_strategy_entry_non_metered_connection"
+            comment="selection option for 'Automatic download' setting"
+            >On Wi-FI</string>
+    <string name="pref_auto_start_download_strategy_entry_any_connection"
+            comment="selection option for 'Automatic download' setting"
+            >On all connections</string>
+
+    <string name="pref_auto_start_download_strategy_summary_manual"
+            comment="summary for 'Automatic download' setting shown when 'No automatic download' option is selected"
+            >Do not download queue automatically</string>
+    <string name="pref_auto_start_download_strategy_summary_non_metered_connection"
+            comment="summary for 'Automatic download' setting shown when 'On Wi-Fi' option is selected"
+            >Automatically download queue on Wi-FI connections</string>
+    <string name="pref_auto_start_download_strategy_summary_any_connection"
+            comment="summary for 'Automatic download' setting shown when 'On all connections' option is selected"
+            >Automatically download queue on any connection</string>
+
+    <!-- storage -->
+    <string name="pref_category_storage"
+            comment="top level settings category"
+            >Storage</string>
+
+    <string name="pref_storage_request_permission">Grant storage access</string>
+    <string name="pref_storage_request_permission_summary">Grant uPod access to external storage, to enable the storage picker below.</string>
+
+    <string name="pref_storage"
+            comment="setting title"
+            >Storage</string>
+
+    <string name="pref_storage_internal"
+            comment="entry for storage picker dialog; placeholder will be replaced with available storage space in GB"
+            >Internal (%.2f GB available)</string>
+    <string name="pref_storage_external"
+            comment="entry for storage picker dialog; placeholder will be replaced with available storage space in GB"
+            >External (%.2f GB available)</string>
+    <string name="pref_storage_external_secondary"
+            comment="entry for storage picker dialog; placeholder will be replaced with available storage space in GB"
+            >External 2 (%.2f GB available)</string>
+
+    <string name="pref_storage_internal_summary"
+            comment="setting summary shown when internal storage is selected"
+            >Store episodes and coverart on internal storage</string>
+    <string name="pref_storage_external_summary"
+            comment="setting summary shown when external storage is selected"
+            >Store episodes and coverart on external storage</string>
+    <string name="pref_storage_external_secondary_summary"
+            comment="setting summary shown when secondary external storage is selected"
+            >Store episodes and coverart on secondary external storage</string>
+
+    <string name="pref_storage_change_title"
+            comment="title of confirmation dialog shown when the user selects another storage"
+            >Change storage</string>
+    <string name="pref_storage_change_confirmation"
+            comment="content of confirmation dialog shown when the user selects another storage"
+            >When you change the storage, existing episode downloads will be deleted and the affected episodes will be added to your download queue.\n\nDo you want to continue?</string>
+    <string name="pref_storage_change_without_deletion"
+            comment="button of confirmation dialog shown when the user selects another storage"
+            >Yes, without delete</string>
+
+    <string name="pref_storage_space_minimum">Minimum space</string>
+    <string name="pref_storage_space_minimum_summary">Keep a minimum of %,d MB of free space. Downloads will be stopped when no further space is available.</string>
+    <string name="megabytes">MB</string>
+
+    <!-- license -->
+    <string name="pref_category_license"
+            comment="top level settings category"
+            >License</string>
+
+    <string name="pref_license_none"
+            comment="settings title shown for the first setting in the 'License' settings screen when the user does not have a license"
+            >No license</string>
+    <string name="pref_license_none_summary"
+            comment="settings summary shown for the first setting in the 'License' settings screen when the user does not have a license"
+            >You do not have a license. Tap to check for license.</string>
+
+    <string name="pref_license_google"
+            comment="settings title shown for the first setting in the 'License' settings screen when the user has purchased a license at Google play!"
+            >Google play! license</string>
+    <string name="pref_license_google_summary"
+            comment="settings summary shown for the first setting in the 'License' settings screen when the user has purchased a license at Google play!"
+            >You have a valid Google play! license</string>
+
+    <string name="pref_license_giveaway"
+            comment="settings title shown for the first setting in the 'License' settings screen when the user has got a give-away license from the uPod team"
+            >Give-away license</string>
+    <string name="pref_license_giveaway_summary"
+            comment="settings summary shown for the first setting in the 'License' settings screen when the user has got a give-away license from the uPod team"
+            >You have a valid give-away license</string>
+
+    <string name="pref_license_purchase"
+            comment="setting title"
+            >Purchase premium version</string>
+    <string name="pref_license_purchase_summary"
+            comment="setting summary"
+            >Opens the uPod premium license in Google play!</string>
+
+    <string name="pref_license_start_trial">Start trial period</string>
+    <string name="pref_license_start_trial_summary">Test all premium features for 7 days</string>
+
+    <string name="pref_license_trial_period"
+            comment="setting title"
+            >Trial period</string>
+    <string name="pref_license_trial_period_summary"
+            comment="setting summary shown when the user does not have a license and the trial period has not expired yet"
+            >%d day(s) remaining</string>
+    <string name="pref_license_trial_period_summary_epxires_soon"
+            comment="setting summary shown when the user does not have a license and the trial period will expire within the next 24 hours"
+            >Expires within the next %d hour(s)!</string>
+    <string name="pref_license_trial_period_summary_expired"
+            comment="setting summary shown when the user does not have a license and the trial period has expired"
+            >Expired!</string>
+
+    <!-- support -->
+    <string name="pref_category_support"
+            comment="top level settings category"
+            >Feedback &amp; Support</string>
+
+    <string name="pref_reset_tips">Show tips again</string>
+    <string name="pref_reset_tips_summary">Make all of the introducing tips appear again</string>
+    <string name="pref_reset_tips_confirmation">All tips have been reset</string>
+
+    <string name="pref_support_site"
+            comment="setting title"
+            >Feedback &amp; support</string>
+    <string name="pref_support_site_summary"
+            comment="setting summary"
+            >Get help and vote for features on the uPod support site</string>
+
+    <string name="pref_enhanced_logging"
+            comment="setting title"
+            >Enhanced logging</string>
+    <string name="pref_enhanced_logging_summary"
+            comment="setting summary"
+            >Writes more detailed logs. Only enable if support asked you to do so</string>
+
+    <string name="pref_send_diagnostics"
+            comment="setting title"
+            >Send diagnostics</string>
+    <string name="pref_send_diagnostics_summary"
+            comment="setting summary"
+            >Send logs and other diagnostics to the support using your e-mail app</string>
+
+    <string name="pref_category_contribute"
+            comment="setting category"
+            >Contribute</string>
+
+    <string name="pref_purchase"
+            comment="setting title"
+            >Purchase premium license</string>
+    <string name="pref_purchase_summary"
+            comment="setting summary"
+            >Unlock uPod\'s premium features and help us to further improve uPod</string>
+
+    <string name="pref_rate"
+            comment="setting title"
+            >Rate uPod at Google play!</string>
+    <string name="pref_rate_summary"
+            comment="setting summary"
+            >Help us to make uPod more successful and rate it at Google play!</string>
+
+    <string name="pref_share_upod"
+            comment="setting title"
+            >Tell your friends about uPod</string>
+    <string name="pref_share_upod_summary"
+            comment="setting summary"
+            >Help us to make uPod more famous by telling your friends about uPod</string>
+
+    <string name="pref_beta"
+            comment="setting title"
+            >uPod beta channel</string>
+    <string name="pref_beta_summary"
+            comment="setting summary"
+            >Become a uPod beta tester</string>
+
+    <string name="pref_category_info"
+            comment="setting category"
+            >Info</string>
+
+    <string name="pref_about"
+            comment="setting title"
+            >About uPod</string>
+    <string name="pref_about_summary"
+            comment="setting summary"
+            >Version number and licenses</string>
+
+    <string name="pref_website"
+            comment="setting title"
+            >uPod blog</string>
+    <string name="pref_website_summary"
+            comment="setting summary"
+            >Read the latest news on the uPod website</string>
+
+    <string name="pref_gplus"
+            comment="setting title"
+            >uPod at Google+</string>
+    <string name="pref_gplus_summary"
+            comment="setting summary"
+            >Follow uPod at Google+</string>
+
+    <string name="pref_twitter"
+            comment="setting title"
+            >uPod at Twitter</string>
+    <string name="pref_twitter_summary"
+            comment="setting summary"
+            >Follow uPod at Twitter</string>
+
+    <!-- subscription -->
+    <string name="subscription_settings_auto_add"
+            comment="subscription setting title"
+            >Save for later</string>
+    <string name="subscription_settings_auto_add_summary"
+            comment="subscription setting summary"
+            >Automatically mark new episodes of this podcast as not-new and save them for later</string>
+
+    <string name="subscription_settings_auto_add_to_playlist"
+            comment="subscription setting title"
+            >Auto add to playlist</string>
+    <string name="subscription_settings_auto_add_to_playlist_summary"
+            comment="subscription setting summary"
+            >Automatically add new episodes of this podcast to the end of your playlist</string>
+
+    <string name="subscription_settings_limit_number_of_episodes"
+            comment="subscription setting title"
+            >Limit number of episodes</string>
+    <string name="subscription_settings_limit_number_of_episodes_summary"
+            comment="subscription setting summary"
+            >Limit the number of episodes to be kept to the value specified below</string>
+
+    <string name="subscription_settings_max_kept_episodes"
+            comment="subscription setting title"
+            >Max kept episodes</string>
+    <string name="subscription_settings_max_kept_episodes_summary"
+            comment="subscription setting summary"
+            >Only keep the newest %d episode(s) and remove older episodes</string>
+
+    <string name="subscription_settings_auto_download"
+            comment="subscription setting title"
+            >Auto download</string>
+    <string name="subscription_settings_auto_download_summary"
+            comment="subscription setting summary"
+            >Automatically add new episodes from this podcast to the download queue</string>
+
+    <string name="subscription_settings_playback_speed"
+            comment="setting title"
+            >Playback speed</string>
+    <string name="subscription_settings_playback_speed_summary"
+            comment="subscription setting summary"
+            >Episodes are playing with a speed factor of %1.1f</string>
+
+    <string name="subscription_settings_volume_gain">Volume gain</string>
+    <string name="subscription_settings_volume_gain_summary">Episodes audio level is amplified by %1.1f dB</string>
+
+    <!-- about uPod -->
+    <string name="about"
+            comment="title of the dialog showing basic information about uPod"
+            >About uPod</string>
+
+</resources>

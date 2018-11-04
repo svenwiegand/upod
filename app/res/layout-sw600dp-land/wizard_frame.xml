@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primary">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:minHeight="150dp"
+        android:padding="@dimen/space_huge"
+        android:textAppearance="@style/TextAppearance.Wizard.Title"
+        android:textColor="@color/white"
+        android:background="@color/primary"
+        android:gravity="bottom|start"
+        android:text="Wizard Page Title"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_width="480dp"
+        android:layout_height="match_parent"
+        card_view:cardElevation="@dimen/elevation_8">
+        <include layout="@layout/wizard"/>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

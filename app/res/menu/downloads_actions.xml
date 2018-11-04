@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:support="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_download_list"
+          android:icon="@drawable/ic_action_download"
+          android:title="@string/action_download_list"
+          support:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_stop_download"
+          android:icon="@drawable/ic_action_download_stop"
+          android:title="@string/action_stop_download"
+          support:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_clear_list"
+          android:title="@string/action_clear_list"/>
+</menu>

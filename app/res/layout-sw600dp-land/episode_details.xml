@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/episodes"
+        android:layout_width="@dimen/nav_fragment_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="?navDrawerBackground">
+    </FrameLayout>
+
+    <include
+        layout="@layout/shadow_inner_top_8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_size"
+        android:layout_alignLeft="@id/episodes"
+        android:layout_alignRight="@id/episodes"/>
+
+    <fragment
+        class="mobi.upod.app.gui.episode.EpisodeDetailsFragment"
+        android:id="@+id/episode_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/episodes"
+        android:layout_toLeftOf="@+id/playbackPanel"/>
+
+    <include
+        android:id="@+id/actionBarShadow"
+        layout="@layout/shadow_inner_top_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_size"
+        android:layout_alignLeft="@id/episode_details"
+        android:layout_alignRight="@id/episode_details"
+        android:alpha="0"/>
+
+    <include
+        layout="@layout/playback_bar"
+        android:layout_width="@dimen/playback_bar_size"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"/>
+
+    <include
+        layout="@layout/shadow_inner_right_4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/playbackPanel"/>
+</RelativeLayout>

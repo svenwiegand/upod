@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- typography -->
+    <style name="TextAppearance.Display4">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">112sp</item>
+        <item name="android:textColor">?textColorLargePrimary</item>
+    </style>
+    <style name="TextAppearance.Display3">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:textColor">?textColorLargePrimary</item>
+    </style>
+    <style name="TextAppearance.Display2">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textColor">?textColorLargePrimary</item>
+    </style>
+    <style name="TextAppearance.Display1">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">?textColorLargePrimary</item>
+    </style>
+    <style name="TextAppearance.Headline">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">?textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Title">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">20sp</item>
+        <!-- item name="android:textStyle">bold</item -->
+        <item name="android:textColor">?textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Subhead">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Body2">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Body1">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Caption">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Menu">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Button">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">?textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.List" parent="TextAppearance.Subhead"/>
+    <style name="TextAppearance.List.PrimaryText"/>
+    <style name="TextAppearance.List.PrimaryText.Emphasized">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.List.SecondaryText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.List.Subhead" parent="TextAppearance.Body2">
+        <item name="android:textColor">?textColorSecondary</item>
+    </style>
+</resources>

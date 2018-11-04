@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/space_medium">
+
+    <TextView
+            android:id="@+id/podcastUrlHint"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:text="@string/add_podcast_summary"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:linksClickable="true"/>
+    <EditText
+            android:id="@+id/podcastUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:inputType="textUri"
+            android:hint="@string/add_podcast_url_hint"/>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/playbackPanel"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="?windowBackground"
+             android:animateLayoutChanges="true">
+
+    <include layout="@layout/playback_empty_messages"/>
+
+    <FrameLayout
+            android:id="@+id/videoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+        <TextureView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/previewImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/black"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/playbackControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:fitsSystemWindows="true">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#88000000">
+            <include
+                layout="@layout/playback_controls"
+                android:id="@+id/playbackControls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

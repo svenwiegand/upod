@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:upod="http://schemas.android.com/apk/res/mobi.upod.app"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <mobi.upod.android.preference.ListPreferenceWithEntrySummary
+            android:key="pref_media_position_format"
+            android:title="@string/pref_media_position_format"
+            android:entryValues="@array/pref_media_position_format_values"
+            android:entries="@array/pref_media_position_format_entries"
+            upod:summaries="@array/pref_media_position_format_summaries"
+            android:defaultValue="CurrentAndDuration"/>
+
+    <mobi.upod.android.preference.ListPreferenceWithEntrySummary
+            android:key="pref_playback_notification_buttons"
+            android:title="@string/pref_playback_notification_buttons"
+            android:entryValues="@array/pref_playback_notification_buttons_values"
+            android:entries="@array/pref_playback_notification_buttons_entries"
+            upod:summaries="@array/pref_playback_notification_buttons_summaries"
+            android:defaultValue="StopPlaySkip"/>
+
+    <mobi.upod.android.preference.NumberPickerPreference
+            android:key="pref_fast_forward_seconds"
+            android:title="@string/pref_fast_forward_seconds"
+            android:summary="@string/pref_fast_forward_seconds_summary"
+            android:defaultValue="30"
+            android:max="300"
+            upod:min="5"
+            upod:stepSize="5"
+            upod:numberUnit="@string/seconds"/>
+    <mobi.upod.android.preference.NumberPickerPreference
+            android:key="pref_rewind_seconds"
+            android:title="@string/pref_rewind_seconds"
+            android:summary="@string/pref_rewind_seconds_summary"
+            android:defaultValue="30"
+            android:max="300"
+            app:min="5"
+            app:stepSize="5"
+            app:numberUnit="@string/seconds"/>
+
+    <mobi.upod.android.preference.ListPreferenceWithEntrySummary
+            android:key="pref_play_not_downloaded_episodes"
+            android:title="@string/pref_play_not_downloaded_episodes"
+            android:entryValues="@array/pref_play_not_downloaded_episodes_values"
+            android:entries="@array/pref_play_not_downloaded_episodes_entries"
+            upod:summaries="@array/pref_play_not_downloaded_episodes_summaries"
+            android:defaultValue="Skip"/>
+
+    <PreferenceCategory android:title="@string/pref_category_playback_view">
+        <mobi.upod.android.preference.ListPreferenceWithEntrySummary
+                android:key="pref_auto_show_playback_view"
+                android:title="@string/pref_auto_show_playback_view"
+                android:entryValues="@array/pref_auto_show_playback_view_values"
+                android:entries="@array/pref_auto_show_playback_view_entries"
+                upod:summaries="@array/pref_auto_show_playback_view_summaries"
+                android:defaultValue="Always"/>
+        <CheckBoxPreference
+                android:key="pref_enforce_landscape_video"
+                android:title="@string/pref_enforce_landscape_video"
+                android:summary="@string/pref_enforce_landscape_video_summary"
+                android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_headset">
+        <CheckBoxPreference
+                android:key="pref_swap_jump_wind_buttons"
+                android:title="@string/pref_swap_jump_wind_buttons"
+                android:summary="@string/pref_swap_jump_wind_buttons_summary"
+                android:defaultValue="false"/>
+        <CheckBoxPreference
+                android:key="pref_double_click_ff_to_skip"
+                android:title="@string/pref_double_click_ff_to_skip"
+                android:summary="@string/pref_double_click_ff_to_skip_summary"
+                android:defaultValue="false"/>
+        <CheckBoxPreference
+                android:key="pref_skip_back_chapter"
+                android:title="@string/pref_skip_back_chapter"
+                android:summary="@string/pref_skip_back_chapter_summary"
+                android:defaultValue="true"/>
+        <CheckBoxPreference
+                android:key="pref_pause_when_becoming_noisy"
+                android:title="@string/pref_pause_when_becoming_noisy"
+                android:summary="@string/pref_pause_when_becoming_noisy_summary"
+                android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_media_player">
+        <mobi.upod.android.preference.ListPreferenceWithEntrySummary
+            android:key="pref_audio_player"
+            android:title="@string/pref_audio_player"
+            android:entryValues="@array/pref_audio_player_values"
+            android:entries="@array/pref_audio_player_entries"
+            upod:summaries="@array/pref_audio_player_summaries"
+            android:defaultValue="Android"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="80dp">
+    <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider"
+            android:layout_gravity="top"
+            android:background="?android:attr/listDivider"/>
+    <Button
+            android:id="@+id/showOtherPodcastEpisodes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/action_show_all_podcast_episodes"
+            android:textAppearance="?textAppearanceSecondary"
+            android:textColor="?textColorSecondary"
+            android:background="?activatedListItemBackground"/>
+</FrameLayout>
